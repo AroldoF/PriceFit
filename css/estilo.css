@@ -6,6 +6,8 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
     background-color: rgba(10, 124, 228, 1);
     padding: 10px;
     position: relative;
@@ -15,6 +17,7 @@ header {
     align-items: center;
     height: 40px;
 }
+
 .barra_de_pesquisa:focus, input:focus, select:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -46,20 +49,22 @@ header {
 }
 .todos_produtos {
     display: flex;
+    justify-content: center;
+    gap: 60px;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+    margin: 30px 0;
 }
 .produtos {
     border-radius: 10px;
-    height: 540px;
+    height: 560px;
     width: 380px;
     background-color: rgba(217, 217, 217, 1);
 }
 .imagem_produto_div{
-    border: solid 1px black;
+
 }
 
 .imagem_produtos {
@@ -71,7 +76,26 @@ header {
 .texto_produto{
     font-size: 15px;
 }
-
+a{
+}
+.nome_produto_link{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.texto_links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.banners{
+    margin: 0;
+}
+.banners_img{
+    width: 100%;
+}
 #rodape {
     display: flex;
     justify-content: space-evenly;
@@ -86,7 +110,6 @@ footer {
     left: 0;
     bottom: 0;
     margin: 0;
-    width: 100%;
 }
 #margin_footer{
     margin-bottom: 0;
