@@ -37,6 +37,22 @@ nav{
     color: #FFFFFF;
     font-size: 20px;
 }
+.icones_escondidos{
+    display: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: rgba(10, 124, 228, 1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para destacar os ícones */
+    position: absolute; /* Para que apareçam sobre o conteúdo */
+    left: 370px;
+}
+.nav_links:hover+ .icones_escondidos{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: left;
+}
+
 .barra_de_pesquisa{
     display: flex;
     align-items: center;
@@ -105,17 +121,45 @@ nav{
 }
 a{
 }
+.nome_produto_link_div{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 45px;
+    text-align: justify;
+}
 .nome_produto_link{
+    color: rgb(37, 37, 37);
+    text-decoration: none;
     display: block;
     text-align: center;
-    margin: 10px 0;
+    margin-top: 5px;
+}
+.nome_produto_link:hover{
+    text-decoration: underline;
 }
 .texto_links{
+    font-size: 15px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
+}
+.frete_gratis{
+    color: green;
+    text-decoration: none;
+}
+.preço_antigo{
+    text-decoration: line-through;
+    color: #4d4d4d;
+}
+.preço_novo_icones{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+.preço_novo_icones:hover{
+    text-decoration: underline;
 }
 .banners{
     margin: 10px 0;
@@ -129,9 +173,36 @@ a{
 #rodape {
     display: flex;
     justify-content: space-evenly;
-    justify-items: center;
-}
+    align-items: start;
 
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.ver_mais{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ver_mais_div{
+    background-color: rgba(255, 141, 38, 1);
+    border-radius: 40px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao_ver_mais{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.botao_ver_mais:hover{
+    text-decoration: underline;
+}
 footer {
     background-color: rgba(4, 21, 47, 1);
     color: white;
@@ -146,13 +217,9 @@ footer {
     text-align: left;
 }
 .estrela{
-
     display: flex;
     align-items: center;
     justify-content: center;
-}
-p,h2{
-    text-align: center;
 }
 .zap{
     display: flex;
