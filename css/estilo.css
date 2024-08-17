@@ -7,15 +7,41 @@ body {
 
 header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background-color: rgba(10, 124, 228, 1);
     padding: 10px;
     position: relative;
+    justify-content: space-between;
+}
+.cima_header{
+    margin: 0 auto;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    margin: 0 auto;
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px
+}
+.link_pghome{
+    display: flex;
+    align-items: center;
+}
+.nav_links{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
 }
 .barra_de_pesquisa{
     display: flex;
     align-items: center;
     height: 40px;
+    width: 600px;
 }
 
 .barra_de_pesquisa:focus, input:focus, select:focus{
@@ -29,6 +55,7 @@ header {
     border: 0;
     height: 100%;
     padding: 0 0 0 10px;
+    width: 100%;
 }
 
 .busca-botão{
@@ -48,19 +75,19 @@ header {
     padding: 0 5px 0 5px;
 }
 .todos_produtos {
-    display: flex;
-    justify-content: space-around;
-    
-    flex-direction: row;
+    display: grid;
+    width: 1200px;
+    margin: 30px auto;
     align-items: center;
     justify-items: center;
-    flex-wrap: wrap;
-    margin: 30px 0;
+    grid-template-areas: "1 2 3 4";   
 }
 .produtos {
     border-radius: 10px;
-    height: 560px;
-    width: 380px;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    height: 388px;
+    width: 234px;
     background-color: rgba(217, 217, 217, 1);
 }
 .imagem_produto_div{
@@ -91,10 +118,13 @@ a{
     text-align: center;
 }
 .banners{
-    margin: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 .banners_img{
-    width: 100%;
+    border-radius: 20px;
+    margin: auto;
 }
 #rodape {
     display: flex;
@@ -123,4 +153,9 @@ footer {
 }
 p,h2{
     text-align: center;
+}
+.zap{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
