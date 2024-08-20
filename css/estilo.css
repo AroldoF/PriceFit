@@ -416,41 +416,61 @@ footer {
 @media (min-width: 1920px) {
     .container {
         padding: 0 100px;
-        box-sizing: border-box; 
-        
+        box-sizing: border-box;
     }
 
     .login-container {
-        position:static;
+        position: static;
         width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        margin-top: -450px; 
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 22px;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+    .input-container input {
+        padding-left: 40px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .button-entrar button {
+        width: 100%;
+        max-width: 450px;
+        height: 55px;
     }
 }
 
 @media (max-width: 767px) {
     .container {
         padding: 20px;
+        justify-content: center; 
     }
 
     .login-container {
         width: 100%;
-        max-width: none; 
+        max-width: 100%;
         margin: 0 auto;
         margin-top: -250px;
-        padding: 20px; 
-        box-sizing: border-box;
-    }
-
-    .input-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-
-    .input-container input {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
+        padding: 20px;
     }
 }
 
