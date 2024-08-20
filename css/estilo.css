@@ -468,7 +468,7 @@ footer {
     }
 
     .login-container {
-        width: 100%;
+        width: 70%;
         margin: 0;
         padding: 10px;
         box-sizing: border-box;
@@ -482,20 +482,20 @@ footer {
     }
 
     .input-container {
-        width: 100%;
+        width: 70%;
         padding: 0 5px;
         margin-bottom: 10px;
     }
 
     .input-container input {
-        width: 100%;
+        width: 70%;
         padding-left: 35px;
         padding: 10px;
         box-sizing: border-box;
     }
 
     .button-entrar button {
-        width: 100%;
+        width: 70%;
         height: 50px;
         font-size: 14px;
         padding: 0 5px;
@@ -503,7 +503,7 @@ footer {
     }
 
     .login-container .SocialMedia-Container {
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -511,7 +511,7 @@ footer {
     }
 
     .login-container .SocialMedia-Container button {
-        width: 100%;
+        width: 70%;
         margin: 5px 0;
     }
 }
