@@ -461,14 +461,13 @@ footer {
 
 @media (max-width: 767px) {
     .container {
-        padding: 0 5px;
+        padding: 0;
         justify-content: center;
         height: auto;
     }
 
     .login-container {
         width: 100%;
-        max-width: 100%;
         margin: 0 auto;
         padding: 10px;
         box-sizing: border-box;
@@ -486,8 +485,8 @@ footer {
     }
 
     .input-container input {
+        width: 100%;
         padding-left: 35px;
-        width: calc(100% - 40px);
         padding: 10px;
         box-sizing: border-box;
     }
@@ -510,11 +509,15 @@ footer {
     }
 
     .login-container .SocialMedia-Container {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .login-container .SocialMedia-Container button {
-        margin: 5px 8px;
+        width: 90%; 
+        margin: 5px 0;
     }
 }
 
