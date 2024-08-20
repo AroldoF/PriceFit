@@ -389,6 +389,8 @@ footer {
     gap: 5px;
 }
 
+/*Página de Login*/
+
 .container {
     display: flex;
     justify-content: flex-end;
@@ -400,7 +402,7 @@ footer {
 
 .login-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     margin-top: -90px;
     margin-right: 140px;
@@ -437,7 +439,7 @@ footer {
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
-        margin-top: -450px;
+        margin-top: -450px; 
         padding: 20px;
     }
 
@@ -465,7 +467,7 @@ footer {
     .container {
         padding: 0;
         width: 100%;
-        overflow-x: hidden;
+        overflow-x:hidden; /* Evita overflow horizontal */
     }
 
     .login-container {
@@ -542,14 +544,15 @@ footer {
 }
 
 .input-container input {
-    padding-left: 40px;
+    padding-left: 40px; 
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 
 .login-container input[type="text"],
-.login-container input[type="password"] {
+.login-container input[type="password"] 
+{
     width: 380px;
     height: 55px;
     font-size: 15px;
@@ -561,7 +564,7 @@ footer {
 }
 
 
-.button-entrar button {
+.button-entrar button{
     width: 380px;
     height: 55px;
     padding: 10px;
@@ -579,14 +582,14 @@ footer {
 }
 
 .button-entrar button img {
-    width: 28px;
+    width: 28px; 
     vertical-align: middle;
     margin-right: 8px;
 }
 
 
 .login-container button:hover {
-    background-color: #FF8B1F;
+    background-color:#FF8B1F;
 }
 
 .login-container .forgot-password {
@@ -611,21 +614,21 @@ footer {
     font-size: 16px;
     font-weight: 600;
     color: #7F858D;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 
 .login-container .SocialMedia-Container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
 }
 
 
 .login-container .SocialMedia-Container button {
     display: inline-block;
     margin-top: 10px;
-    border: none;
+    border: none; 
     background: none;
     padding: 0;
     cursor: pointer;
