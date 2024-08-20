@@ -386,8 +386,6 @@ footer {
     gap: 5px;
 }
 
-/*Página de Login*/
-
 .container {
     display: flex;
     justify-content: flex-end;
@@ -422,6 +420,7 @@ footer {
     .login-container {
         position: static;
         width: 400px;
+        margin-top: -350px; 
     }
 }
 
@@ -463,15 +462,17 @@ footer {
     .container {
         padding: 0;
         width: 100%;
-        overflow-x: hidden; /* Evita overflow horizontal */
+        overflow-x:hidden; /* Evita overflow horizontal */
     }
 
     .login-container {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
+        margin-top: -250px;
         padding: 10px;
         box-sizing: border-box;
+      
     }
 
     .login-container h2 {
@@ -492,6 +493,7 @@ footer {
         padding-left: 35px;
         padding: 10px;
         box-sizing: border-box;
+        
     }
 
     .button-entrar button {
@@ -508,11 +510,6 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         padding: 0;
-    }
-
-    .login-container .SocialMedia-Container button {
-        width: calc(50% - 10px);
-        margin: 5px;
     }
 }
 
