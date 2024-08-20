@@ -607,8 +607,6 @@ footer {
 .login-container .signup a:hover {
     text-decoration: underline;
 }
-<<<<<<< Updated upstream
-=======
 
 .produtos_section {
     display: grid;
@@ -685,4 +683,3 @@ button {
     display: flex;
     justify-content: space-between;
 }
->>>>>>> Stashed changes
