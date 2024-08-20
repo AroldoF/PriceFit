@@ -463,13 +463,13 @@ footer {
     .container {
         padding: 0;
         width: 100%;
-        overflow-x: hidden; /* Impede o overflow horizontal */
+        overflow-x: hidden; /* Evita overflow horizontal */
     }
 
     .login-container {
         width: 100%;
-        max-width: 100%; /* Garante que não haja overflow horizontal */
-        margin: 0;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 10px;
         box-sizing: border-box;
     }
@@ -511,7 +511,7 @@ footer {
     }
 
     .login-container .SocialMedia-Container button {
-        width: calc(50% - 10px); /* Ajusta a largura dos botões para caber em uma linha */
+        width: calc(50% - 10px);
         margin: 5px;
     }
 }
