@@ -441,15 +441,15 @@ footer {
     }
 
     .input-container {
-        width: 100%; /* Garante que o input-container ocupe toda a largura disponível */
+        width: 100%;
         display: flex;
         justify-content: center;
         box-sizing: border-box;
     }
 
     .input-container input {
-        width: 100%; /* Garante que o input ocupe toda a largura do input-container */
-        max-width: 100%; /* Evita que o input ultrapasse a largura do input-container */
+        width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
     }
 }
@@ -544,16 +544,16 @@ footer {
     margin-top: 20px;
 }
 
-/* Estilização do texto dentro da SocialMedia-Container */
+
 .login-container p {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
     color: #7F858D;
-    margin-bottom: 20px; /* Espaçamento entre o parágrafo e os botões */
+    margin-bottom: 20px; 
 }
 
-/* Estilização dos botões dentro da SocialMedia-Container */
+
 .login-container .SocialMedia-Container {
     display: flex;
     justify-content: center; 
@@ -568,7 +568,7 @@ footer {
     background: none;
     padding: 0;
     cursor: pointer;
-    margin: 0 15px; /* Espaçamento entre os botões, se necessário */
+    margin: 0 15px;
 }
 
 
