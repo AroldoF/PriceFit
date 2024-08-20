@@ -220,6 +220,8 @@ select:focus {
     height: 388px;
     width: 234px;
     background-color: rgba(217, 217, 217, 1);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .produtos:hover {
@@ -239,7 +241,6 @@ select:focus {
     font-size: 15px;
 }
 
-a {}
 
 .nome_produto_link_div {
     overflow: hidden;
@@ -607,3 +608,82 @@ footer {
 .login-container .signup a:hover {
     text-decoration: underline;
 }
+<<<<<<< Updated upstream
+=======
+
+.produtos_section {
+    display: grid;
+    grid-template-areas: "1 2";
+    margin: 20px auto;
+    width: 1200px;
+    gap: 40px;
+}
+
+.produtos_articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos_articles_nomes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link_lojas {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 1);
+    width: 500px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.lojas_produtos {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    height: 200px;
+}
+
+.link_lojas_imgs {
+    margin: 10px
+}
+
+.lojas_produtos_divs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: left;
+}
+
+.lojas_produtos_imgs {
+    border-radius: 20px;
+
+}
+
+button {
+    border-radius: 20px;
+    border-style: none;
+    width: 300px;
+    background-color: #FF6500;
+    height: 30px;
+}
+
+.produtos_articles_divs {
+    display: grid;
+    grid-template-areas: "1";
+    margin-top: 10px;
+}
+
+.produtos_articles_divs_img {
+    display: flex;
+    justify-content: space-between;
+}
+>>>>>>> Stashed changes
