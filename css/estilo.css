@@ -467,13 +467,13 @@ footer {
     .container {
         padding: 0;
         width: 100%;
-        overflow-x: hidden; /* Impede o overflow horizontal */
-    }
+        overflow-x: hidden;
+    } 
 
     .login-container {
         width: 100%;
-        max-width: 100%; /* Garante que não haja overflow horizontal */
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
         margin-top: -250px;
         padding: 10px;
         box-sizing: border-box;
