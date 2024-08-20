@@ -467,18 +467,15 @@ footer {
     .container {
         padding: 0;
         width: 100%;
-        overflow-x:hidden;
-
+        overflow-x: hidden; /* Impede o overflow horizontal */
     }
 
     .login-container {
         width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: 0px;
+        max-width: 100%; /* Garante que não haja overflow horizontal */
+        margin: 0;
         padding: 10px;
         box-sizing: border-box;
-      
     }
 
     .login-container h2 {
@@ -499,7 +496,6 @@ footer {
         padding-left: 35px;
         padding: 10px;
         box-sizing: border-box;
-        
     }
 
     .button-entrar button {
@@ -517,7 +513,13 @@ footer {
         flex-wrap: wrap;
         padding: 0;
     }
+
+    .login-container .SocialMedia-Container button {
+        width: calc(50% - 10px); /* Ajusta a largura dos botões para caber em uma linha */
+        margin: 5px;
+    }
 }
+
 
 .login-container h2 {
     font-size: 25px;
