@@ -161,6 +161,29 @@ select:focus {
     width: 100%;
 }
 
+.texto_de_busca_consulta {
+    border-radius: 20px;
+    height: 100%;
+    padding: 0 0 0 10px;
+    border: solid 1px black;
+    width: 380px;
+}
+
+.texto_de_busca_consulta:focus {
+    box-shadow: 0 0 0 0;
+    border: solid 1px black;
+    outline: 0;
+}
+
+.botao_frete {
+    width: 100px;
+    background-color: #0A7CE4;
+}
+
+.consulta_titulo {
+    margin-top: 60px;
+}
+
 .busca-botão {
     display: flex;
     align-items: center;
@@ -241,6 +264,10 @@ select:focus {
     font-size: 15px;
 }
 
+.titulo_produtos_h3 {
+
+    margin: 60px 0 50px 0;
+}
 
 .nome_produto_link_div {
     overflow: hidden;
@@ -269,6 +296,7 @@ select:focus {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    flex-wrap: nowrap;
 }
 
 .frete_gratis {
@@ -403,7 +431,7 @@ footer {
 
 .login-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     margin-top: -90px;
     margin-right: 140px;
@@ -426,7 +454,7 @@ footer {
     .login-container {
         position: static;
         width: 400px;
-        margin-top: -350px; 
+        margin-top: -350px;
     }
 }
 
@@ -440,7 +468,7 @@ footer {
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
-        margin-top: -450px; 
+        margin-top: -450px;
         padding: 20px;
     }
 
@@ -463,6 +491,7 @@ footer {
         height: 55px;
     }
 }
+
 /*FUNCIONOU*/
 
 @media (max-width: 767px) {
@@ -470,7 +499,7 @@ footer {
         padding: 0;
         width: 100%;
         overflow-x: hidden;
-    } 
+    }
 
     .login-container {
         width: 100%;
@@ -508,15 +537,14 @@ footer {
 }
 
 .input-container input {
-    padding-left: 40px; 
+    padding-left: 40px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 
 .login-container input[type="text"],
-.login-container input[type="password"] 
-{
+.login-container input[type="password"] {
     width: 380px;
     height: 55px;
     font-size: 15px;
@@ -528,7 +556,7 @@ footer {
 }
 
 
-.button-entrar button{
+.button-entrar button {
     width: 380px;
     height: 55px;
     padding: 10px;
@@ -546,14 +574,14 @@ footer {
 }
 
 .button-entrar button img {
-    width: 28px; 
+    width: 28px;
     vertical-align: middle;
     margin-right: 8px;
 }
 
 
 .login-container button:hover {
-    background-color:#FF8B1F;
+    background-color: #FF8B1F;
 }
 
 .login-container .forgot-password {
@@ -578,21 +606,21 @@ footer {
     font-size: 16px;
     font-weight: 600;
     color: #7F858D;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 
 .login-container .SocialMedia-Container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 
 .login-container .SocialMedia-Container button {
     display: inline-block;
     margin-top: 10px;
-    border: none; 
+    border: none;
     background: none;
     padding: 0;
     cursor: pointer;
@@ -613,7 +641,7 @@ footer {
     display: grid;
     grid-template-areas: "1 2";
     margin: 20px auto;
-    width: 1200px;
+    width: 1300px;
     gap: 40px;
 }
 
@@ -625,7 +653,11 @@ footer {
 .produtos_articles_nomes {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 45px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 .link_lojas {
@@ -636,22 +668,35 @@ footer {
     width: 500px;
     border-radius: 20px;
     text-decoration: none;
-    margin: 10px 0;
+    margin: 15px 0;
+}
+
+.link_lojas:hover {
+    background-color: rgb(204, 204, 204);
+
+}
+
+.titulo_produtos {
+    width: 1300px;
+    margin: 0 auto;
 }
 
 .lojas_produtos {
     width: 300px;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 150px;
     gap: 5px;
-    justify-content: center;
-    margin-top: 10px;
-    height: 200px;
+    margin: 15px 0;
+    height: 150px;
+}
+
+.imagem_titulo {
+    border-radius: 20px;
 }
 
 .link_lojas_imgs {
-    margin: 10px
+    margin-left: 10px;
 }
 
 .lojas_produtos_divs {
@@ -669,18 +714,65 @@ footer {
 button {
     border-radius: 20px;
     border-style: none;
-    width: 300px;
+    width: 500px;
     background-color: #FF6500;
     height: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.botao_comprar {
+    width: 200px;
 }
 
 .produtos_articles_divs {
     display: grid;
+    gap: 20px;
     grid-template-areas: "1";
     margin-top: 10px;
 }
 
 .produtos_articles_divs_img {
     display: flex;
-    justify-content: space-between;
+    width: 600px;
+    justify-content: space-around;
+}
+
+.lojas_produtos_divs_paragrafo {
+    margin: 5px 0;
+    color: rgb(0, 0, 0);
+}
+
+.lojas_produtos_divs_paragrafo:hover {
+    text-decoration: underline;
+}
+
+.img_artivle_produto {
+    border-bottom: #4d4d4d solid 1px;
+    border-radius: 20px;
+}
+
+.detalhes_tecnicos {
+    background-color: rgba(4, 21, 47, 1);
+    border-radius: 20px;
+    color: #FFFFFF;
+    width: 1200px;
+    height: 1000;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 20px 20px 30px 20px;
+}
+.detalhes_tecnicos_titulo{
+    grid-column: 1/3;
+    text-align: center;
+}
+.detalhes_tecnicos_div1{
+    grid-column: 1/2;
+}
+.detalhes_tecnicos_div2{
+    border-left: 1px solid #FFFFFF;
+    padding-left: 20px;
 }
