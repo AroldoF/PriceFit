@@ -178,6 +178,11 @@ select:focus {
 .botao_frete {
     width: 100px;
     background-color: #0A7CE4;
+    border-radius: 20px;
+    border-style: none;
+    height: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .consulta_titulo {
@@ -641,7 +646,7 @@ footer {
     display: grid;
     grid-template-areas: "1 2";
     margin: 20px auto;
-    width: 1300px;
+    width: 1200px;
     gap: 40px;
 }
 
@@ -711,7 +716,7 @@ h3 {
 
 }
 
-button {
+.butao_outralojas{
     border-radius: 20px;
     border-style: none;
     width: 500px;
@@ -723,6 +728,12 @@ button {
 
 .botao_comprar {
     width: 200px;
+    border-radius: 20px;
+    border-style: none;
+    height: 30px;
+    background-color: #FF6500;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .produtos_articles_divs {
@@ -775,4 +786,88 @@ button {
 .detalhes_tecnicos_div2{
     border-left: 1px solid #FFFFFF;
     padding-left: 20px;
+}
+.cupons_section{
+    display: flex;
+    gap: 60px;
+    width: 1200px;
+    margin: 30px auto;
+}
+.cumpons_divs{
+    padding: 10px 10px 10px 25px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    max-height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cumpons_divs_templetes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botao_ver_cupom {
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cumpons_divs_lojas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 450px;
+    background-color: #ccc6c6;
+    border-radius: 10px;
+}
+.cupons_lojas_templete{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.nome_cupom{
+    width: 300px;
+}
+.cupons_lojas{
+    padding: 5px;   
+    grid-row: auto;
+    background-color: rgb(78, 101, 233);
+    display: flex;
+    height: 20px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.titulo_loja_cupom{
+    text-align: center;
+}
+.cupons_lojas:hover{
+    background-color: #0A7CE4;
+    color: #FFFFFF;
+}
+
+.botao_cupons{
+    width: 200px;
+    border-radius: 20px;
+    border-style: none;
+    height: 30px;
+    background-color: #FF6500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 20px auto;
 }
