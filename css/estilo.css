@@ -417,7 +417,8 @@ footer {
     box-sizing: border-box;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px)
+ {
     .container {
         padding: 0 100px;
         box-sizing: border-box;
@@ -426,7 +427,7 @@ footer {
     .login-container {
         position: static;
         width: 400px;
-        margin-top: -350px; 
+        margin-top: -450px; 
     }
 }
 
@@ -489,7 +490,6 @@ footer {
     color: #FF6500;
     text-decoration: 4px underline #0A7CE4;
     width: 100%;
-    padding-left: 0;
 }
 
 
@@ -596,7 +596,7 @@ footer {
     background: none;
     padding: 0;
     cursor: pointer;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 
@@ -669,7 +669,7 @@ footer {
 button {
     border-radius: 20px;
     border-style: none;
-    width: 300px;
+    /*width: 300px;*/ /*interferiu na página de login*/
     background-color: #FF6500;
     height: 30px;
 }
