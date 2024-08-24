@@ -12,8 +12,12 @@
 <body>
     <header>
         <div class="cima_header">
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+
             <div>
-                <a class="link_pghome" href="index.html">
+                <a class="link_pghome" href="index.html" class="mobile-menu_itens">
                     <img src="img/Logo-Price-Fit-2.png" alt="" width="150px">
                 </a>
             </div>
@@ -33,7 +37,9 @@
                     <a href="" class="nav_links">Alerta</a>
                 </div>
                 <div class="icones_escondidos">
-                    <a class="icones_escondidos_notificação" href=""><p class="icones_escondidos_notificação_p">Vazio</p></a>
+                    <a class="icones_escondidos_notificação" href="">
+                        <p class="icones_escondidos_notificação_p">Vazio</p>
+                    </a>
                 </div>
             </div>
 
@@ -44,6 +50,7 @@
                     <img src="img/sinal-de-seta-para-baixo-para-navegar.png" alt="" width="20px">
                 </a>
             </div>
+            </ul>
         </div>
         <nav>
             <div>
@@ -77,8 +84,71 @@
                 <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <div class="mobile_barra_de_pesquisa">
+                        <input type="text" class="texto_de_busca" placeholder="Buscar produtos...">
+                        <div class="busca-botão">
+                            <a href="" id="lupa">
+                                <img src="img/lupa.png" alt="lupa" width="15px">
+                            </a>
+                        </div>
+                    </div>
 
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/notificacao.png" alt="" width="30px">
+                        <a href="" class="nav_links">Alerta</a>
+                    </div>
+                    <div class="icones_escondidos">
+                        <a class="icones_escondidos_notificação" href="">
+                            <p class="icones_escondidos_notificação_p">Vazio</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                        <a class="nav_links">Categorias</a>
+                    </div>
+                    <div class="icones_escondidos" class="mobile-menu_itens">
+                        <a class="icones_escondidos_links" href="">Acessorios</a>
+                        <a class="icones_escondidos_links" href="">Bolas</a>
+                        <a class="icones_escondidos_links" href="">Bolsas</a>
+                        <a class="icones_escondidos_links" href="">Camisas</a>
+                        <a class="icones_escondidos_links" href="">Chuteiras</a>
+                        <a class="icones_escondidos_links" href="">Shorts</a>
+                        <a class="icones_escondidos_links" href="">Suplementos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/promocoes.png" alt="" width="25px">
+                        <a href="" class="nav_links">Promoções</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/cupom.png" alt="" width="25px">
+                        <a href="cupom.html" class="nav_links">Cupons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                        <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <script src="js/script.js"></script>
 
     <main>
 
@@ -89,28 +159,28 @@
             </article>
 
             <article class="categorias_home">
-                <a href="">
-                    <div class="categorias_home_div"><img src="img/CHUTEIRA - CATEGORIA.png" alt="" width="130px">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/CHUTEIRA - CATEGORIA.png" alt="" width="130px">
                     </div>
                     <p class="categorias_home_paragrafo">Chuteiras</p>
                 </a>
-                <a href="">
-                    <div class="categorias_home_div"><img src="img/BOLSA - CATEGORIAS.png" alt="" width="130px">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/BOLSA - CATEGORIAS.png" alt="" width="130px">
                     </div>
                     <p class="categorias_home_paragrafo">Bolsas</p>
                 </a>
-                <a href="">
-                    <div class="categorias_home_div"><img src="img/Camisa cat.png" alt="" width="130px">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/Camisa cat.png" alt="" width="130px">
                     </div>
                     <p class="categorias_home_paragrafo">Camisas</p>
                 </a>
-                <a href="">
-                    <div class="categorias_home_div"><img src="img/WHEY - CATEGORIA.png" alt="" width="130px">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/WHEY - CATEGORIA.png" alt="" width="130px">
                     </div>
                     <p class="categorias_home_paragrafo">Whey</p>
                 </a>
-                <a href="">
-                    <div class="categorias_home_div"><img src="img/RELÓGIO - CATEGORIA.png" alt="" width="130px">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/RELÓGIO - CATEGORIA.png" alt="" width="130px">
                     </div>
                     <p class="categorias_home_paragrafo">Relógios</p>
                 </a>
@@ -126,8 +196,10 @@
                                 width="300px">
                         </div>
                     </a>
-                    <a href="" class="nome_produto_link">Chuteira Campo Adidas Predator 24 Club Unissex -
-                        Branco+prata</a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Chuteira Campo Adidas Predator 24 Club Unissex -
+                            Branco+prata</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -176,7 +248,9 @@
                                 alt="Chuteira Campo Adidas Deportivo II - Azul Royal+Preto" width="300px">
                         </div>
                     </a>
-                    <a href="" class="nome_produto_link">Chuteira Campo Adidas Deportivo II - Azul Royal+Preto</a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Chuteira Campo Adidas Deportivo II - Azul Royal+Preto</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -191,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="produtos">
+                <div class="produtos quarto_produto">
                     <a href="">
                         <div class="imagem_produto_div">
                             <img class="imagem_produtos"
@@ -199,7 +273,10 @@
                                 alt="Chuteira Campo Adidas Artilheira V Unissex - Roxo+Branco" width="300px">
                         </div>
                     </a>
-                    <a href="" class="nome_produto_link">Chuteira Campo Adidas Artilheira V Unissex - Roxo+Branco</a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Chuteira Campo Adidas Artilheira V Unissex -
+                            Roxo+Branco</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -246,7 +323,9 @@
                                 alt="Camisa Puma teamRise Masculina - Amarelo" width="300px">
                         </div>
                     </a>
-                    <a href="" class="nome_produto_link">Camisa Puma teamRise Masculina - Amarelo</a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Camisa Puma teamRise Masculina - Amarelo</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -268,7 +347,9 @@
                                 alt="Kit 3 Camisas Penalty Masculinas X - Branco+Marinho" width="300px">
                         </div>
                     </a>
-                    <a href="" class="nome_produto_link">Kit 3 Camisas Penalty Masculinas X - Branco+Marinho</a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Kit 3 Camisas Penalty Masculinas X - Branco+Marinho</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -282,7 +363,7 @@
                     </div>
                 </div>
 
-                <div class="produtos">
+                <div class="produtos quarto_produto">
                     <a href="">
                         <div class="imagem_produto_div">
                             <img class="imagem_produtos"
@@ -378,7 +459,9 @@
                                 alt="Bola Futebol Adidas Tango Rosário Campo - Branco+Preto" width="300px">
                         </div>
                     </a>
-                    <a class="nome_produto_link" href="">Bola Futebol Adidas Tango Rosário Campo - Branco+Preto</a>
+                    <div class="nome_produto_link_div">
+                        <a class="nome_produto_link" href="">Bola Futebol Adidas Tango Rosário Campo - Branco+Preto</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
@@ -393,7 +476,7 @@
                     </div>
                 </div>
 
-                <div class="produtos">
+                <div class="produtos quarto_produto">
                     <a href="">
                         <div class="imagem_produto_div">
                             <img class="imagem_produtos"
@@ -401,7 +484,9 @@
                                 alt="Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo" width="300px">
                         </div>
                     </a>
-                    <a class="nome_produto_link" href="">Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo</a>
+                    <div class="nome_produto_link_div">
+                        <a class="nome_produto_link" href="">Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo</a>
+                    </div>
                     <div class="estrela">
                         <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
                             alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
