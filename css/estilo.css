@@ -894,6 +894,9 @@ h3 {
     .cima_header{
         width: 1003px;
     }
+    .cima_header{
+        width: 100%;
+    }
     .barra_de_pesquisa{
         width: 350px;
     }
@@ -1062,6 +1065,10 @@ h3 {
 }
 @media (max-width: 767px) 
 {
+    .cima_header{
+        width: 100%;
+        justify-content: space-around;
+    }
     .todos_produtos{
         grid-template-areas: "1 2";
         width: 600px;
@@ -1100,17 +1107,31 @@ h3 {
     .element {
       font-size: 14px;
     }
+    .banners{
+        width: 100%;
+    }
+    .banners_img{
+        width: 90%;
+        border-radius: 5px;
+    }
+    .nav_divs_login_link_paragrafo{
+        display: none;
+    }
+    .cima_header{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
     .categorias_home_paragrafo{
         font-size: 15px;
     }
     .todos_produtos{
-        width: 350px;
+        width: 100%;
         grid-template-areas: "1";
     }
     .produtos{
         width: 150px;
     }
-    
     
   }
   
