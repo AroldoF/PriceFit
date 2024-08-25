@@ -1095,7 +1095,7 @@ h3 {
     }
     .lojas_produtos{
         width: 95%;
-        margin: auto;
+        margin: 10px auto;
     }
 }
 @media (max-width: 880px)
@@ -1187,6 +1187,12 @@ h3 {
     .imagem_titulo{
         width: 100%;
     }
+    .link_lojas{
+        width: 400px;
+    }
+    .lojas_produtos_imgs{
+        display: block;
+    }
     .detalhes_tecnicos{
         display: flex;
         flex-direction: column;
@@ -1269,9 +1275,22 @@ h3 {
         width: 90%;
 
     }
+    .produtos_articles_nomes{
+        margin: 0;
+    }
+    
+    .detalhes_tecnicos_div1{
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+    .detalhes_tecnicos_div2{
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
     .detalhes_tecnicos{
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        margin: 20px auto;
+
     }
     .imagem_titulo{
         width: 100%;
