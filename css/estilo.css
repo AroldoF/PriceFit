@@ -9,6 +9,7 @@ header {
     background-color: rgba(10, 124, 228, 1);
     padding: 10px;
     position: relative;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -350,11 +351,12 @@ select:focus {
     cursor: pointer;
 }
 
-#rodape {
-    display: flex;
-    justify-content: space-evenly;
+.rodape {
+    display: grid;
+    grid-template-areas: "1 2 3 4";
     align-items: start;
-
+    justify-content: space-around;
+    width: 1300px;
 }
 
 h1 {
@@ -846,6 +848,9 @@ h3 {
     .cima_header{
         width: 1300px;
     }
+    .rodape{
+        width: 100%;
+    }
     .barra_de_pesquisa{
         width: 450px;
     }
@@ -867,65 +872,61 @@ h3 {
 @media screen and (max-width: 1300px)
 {
     .cima_header{
-        width: 1100px;
+        width: 100%;
     }
     .barra_de_pesquisa{
         width: 450px;
     }
     .banners{
-        width: 1100px;
-        margin: 10px auto;
+        width: 100%;
+
     }
     .banners_img{
-        width: 1100px;
+        width: 95%;
     }
     .produtos{
         width: 200px;
     }
     .todos_produtos{
-        width: 1109px;
-    }
-    .cima_header{
-        width: 1109px;
+        width: 90%;
+        margin: auto;
     }
 }
 @media screen and (max-width: 1150px)
 {
     .cima_header{
-        width: 1003px;
-    }
-    .cima_header{
         width: 100%;
+    }
+    .categorias_home{
+        width: 90%;
+        justify-content: space-around;
+        margin: auto;
     }
     .barra_de_pesquisa{
         width: 350px;
     }
     .banners{
-        width: 970px;
+        width: 93%;
+        margin: 10px auto;
     }
     .banners_img{
-        width: 970px;
+        width: 97%;
     }
-    .todos_produtos{
-        width: 970px;
-    }
+   
 }
 @media (max-width: 1024px) 
 {
-    .todos_produtos{
-        width: 910px;
-    }
     .categorias_img{
         width: 110px;
     }
     .categorias_home_div{
         height: 120px;
     }
+    .barra_de_pesquisa{
+        width: 300px;
+    }
     nav{
         width: 700px;
-    }
-    .cima_header{
-        width: 900px;
     }
     .container {
         padding: 20px;
@@ -961,24 +962,15 @@ h3 {
 }
 @media (max-width: 980px)
 {
-    .banners{
-        width: 860px;
-    }
-    .banners_img{
-        width: 860px;
-    }
     .barra_de_pesquisa{
         width: 300px;
-    }
-    .todos_produtos{
-        width: 860px;
     }
     .produtos{
         width: 180px;
         height: 300px;
     }
-    .cima_header{
-        width: 860px;
+    nav{
+        width: 630px;
     }
     .categorias_img{
         width: 90px;
@@ -990,17 +982,20 @@ h3 {
 @media (max-width: 880px)
 {
     .categorias_home{
-        gap: 30px;
+        gap: 0;
+        width: 100%;
+
     }
     .banners{
-        width: 750px;
+        width: 100%;
     }
     .banners_img{
-        width: 750px;
+        width: 95%;
+        margin: auto;
     }
     .cima_header{
-        width: 500px;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
     }
     .mobile-menu-icon {
         display: block;
@@ -1065,13 +1060,12 @@ h3 {
 }
 @media (max-width: 767px) 
 {
-    .cima_header{
-        width: 100%;
-        justify-content: space-around;
+    .categorias_escondidas{
+        display: none;
     }
     .todos_produtos{
         grid-template-areas: "1 2";
-        width: 600px;
+        width: 100%;
     }
     .produtos{
         width: 200px;
@@ -1079,15 +1073,7 @@ h3 {
     .quarto_produto{
         display: block;
     }
-    .categorias_home{
-        gap: 50px;       
-    }
-    .banners{
-        width: 650px;
-    }
-    .banners_img{
-        width: 650px;
-    }
+    
     .container {
         padding: 0;
         width: 100%;
@@ -1102,35 +1088,38 @@ h3 {
         padding: 10px;
         box-sizing: border-box;
     }
+    .rodape{
+        grid-template-areas: "1 2";
+        width: 100%;
+        row-gap: 30px;
+    }
+    #margin_footer{
+        font-size: 12px;
+    }
 }
 @media (max-width: 480px) {
     .element {
       font-size: 14px;
     }
-    .banners{
-        width: 100%;
+    #margin_footer{
+        font-size: 11px;
     }
-    .banners_img{
-        width: 90%;
-        border-radius: 5px;
-    }
+   
     .nav_divs_login_link_paragrafo{
         display: none;
     }
-    .cima_header{
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
+
     .categorias_home_paragrafo{
         font-size: 15px;
     }
     .todos_produtos{
         width: 100%;
-        grid-template-areas: "1";
     }
     .produtos{
         width: 150px;
+    }
+    .rodape_div{
+        text-align: center;
     }
     
   }
