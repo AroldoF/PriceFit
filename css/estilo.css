@@ -1104,11 +1104,14 @@ h3 {
         font-size: 15px;
     }
     .todos_produtos{
-        width: 450px;
+        width: 350px;
+        grid-template-areas: "1";
     }
     .produtos{
-        width: 180px;
+        width: 150px;
     }
+    
+    
   }
   
   /* Estilos para tablets */
