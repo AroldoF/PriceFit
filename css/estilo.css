@@ -986,11 +986,8 @@ h3 {
 }
 @media (max-width: 880px)
 {
-    .categorias_img{
-        width: 80px;
-    }
-    .categorias_home_div{
-        width: 90px;
+    .categorias_home{
+        gap: 30px;
     }
     .banners{
         width: 750px;
@@ -1099,3 +1096,24 @@ h3 {
         box-sizing: border-box;
     }
 }
+@media (max-width: 480px) {
+    .element {
+      font-size: 14px;
+    }
+    .categorias_home_paragrafo{
+        font-size: 15px;
+    }
+    .todos_produtos{
+        width: 450px;
+    }
+    .produtos{
+        width: 180px;
+    }
+  }
+  
+  /* Estilos para tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .element {
+      font-size: 16px;
+    }
+  }
