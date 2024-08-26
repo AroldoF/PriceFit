@@ -1287,6 +1287,9 @@ h3 {
     .favoritos{
         width: 40px;
     }
+    .botao_comprar{
+        width: 255px;
+    }
 }
 @media (max-width: 767px) 
 {
@@ -1410,9 +1413,7 @@ h3 {
     .favoritos{
         width: 35px;
     }
-    .botao_comprar{
-        width: 340px;
-    }
+    
     .texto_de_busca_consulta{
         width: 210px;
     }
