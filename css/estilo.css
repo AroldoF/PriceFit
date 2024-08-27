@@ -477,30 +477,8 @@ footer {
     height: auto;
     box-sizing: border-box;
 }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-
-=======
->>>>>>> Stashed changes
 .mobile-menu-icon {
     display: none;
-}
-
-@media (min-width: 1920px) {
-    .container {
-        padding: 0 100px;
-        box-sizing: border-box;
-    }
-
-    .login-container {
-        position: static;
-        width: 400px;
-        margin-top: -350px;
-    }
-=======
-.mobile-menu-icon {
-    display: none;
->>>>>>> parent of 26f816f (Página de registro)
 }
 /**/
 
@@ -629,7 +607,6 @@ footer {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
 /*USAR NO GÊNERO*/
 
 /*select option:first-child {
@@ -733,14 +710,6 @@ footer {
 
 .divisao-conter {
     display: flex;
-<<<<<<< Updated upstream
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-=======
->>>>>>> parent of 26f816f (Página de registro)
-=======
     align-items: center;
     justify-content: center;
     width: 772px;
@@ -813,8 +782,6 @@ footer {
     box-sizing: border-box;
     color:#7F858D ;
 }
-
->>>>>>> Stashed changes
 .produtos_section {
     display: grid;
     grid-template-areas: "1 2";
@@ -976,12 +943,7 @@ h3 {
     border-left: 1px solid #FFFFFF;
     padding-left: 20px;
 }
-<<<<<<< HEAD
-
-.cupons_section {
-=======
 .cupons_section{
->>>>>>> parent of 26f816f (Página de registro)
     display: flex;
     gap: 60px;
     width: 1200px;
@@ -1077,13 +1039,8 @@ h3 {
 .mobile-menu {
     display: none;
 }
-<<<<<<< HEAD
-
-@media (min-width: 1920px) {
-=======
 @media (min-width: 1920px)
  {
->>>>>>> parent of 26f816f (Página de registro)
     .container {
         padding: 0 100px;
         box-sizing: border-box;
@@ -1092,12 +1049,7 @@ h3 {
     .login-container {
         position: static;
         width: 400px;
-<<<<<<< HEAD
-        margin-top: -350px;
-        margin-top: -350px;
-=======
         margin-top: -350px; 
->>>>>>> parent of 26f816f (Página de registro)
     }
 }
 
@@ -1282,43 +1234,6 @@ h3 {
     .texto_de_busca_consulta {
         display: none;
     }
-<<<<<<< HEAD
-
-    .botao_frete {
-        display: none;
-    }
-}
-
-@media (max-width: 1024px) {
-    .produtos_articles_nomes_h3 {
-
-        gap: 150px;
-    }
-
-    .categorias_img {
-        width: 110px;
-    }
-
-    .categorias_home_div {
-        height: 120px;
-    }
-
-    .butao_outralojas {
-        width: 350px;
-    }
-
-    .barra_de_pesquisa {
-        width: 300px;
-    }
-
-    nav {
-        width: 700px;
-        margin-top: -450px;
-    }
-}
-
-@media (max-width: 1024px) {
-=======
     .categorias_home_div{
         height: 120px;
     }
@@ -1331,27 +1246,17 @@ h3 {
     nav{
         width: 700px;
     }
->>>>>>> parent of 26f816f (Página de registro)
     .container {
         padding: 20px;
         justify-content: center;
     }
-<<<<<<< HEAD
-
-    .lojas_produtos_imgs {
-=======
     .lojas_produtos_imgs{
->>>>>>> parent of 26f816f (Página de registro)
         display: none;
     }
 
     .link_lojas {
         width: 350px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 26f816f (Página de registro)
     .login-container {
         width: 100%;
         max-width: 450px;
@@ -1378,12 +1283,7 @@ h3 {
         max-width: 450px;
         height: 55px;
     }
-<<<<<<< HEAD
-
-    .imagem_titulo {
-=======
     .imagem_titulo{
->>>>>>> parent of 26f816f (Página de registro)
         width: 95%;
         margin: auto;
     }
@@ -1719,15 +1619,7 @@ h3 {
     .quarto_produto {
         display: block;
     }
-<<<<<<< HEAD
-}
-
-/*FUNCIONOU*/
-
-@media (max-width: 767px) {
-=======
     
->>>>>>> parent of 26f816f (Página de registro)
     .container {
         padding: 0;
         width: 100%;
@@ -1742,12 +1634,7 @@ h3 {
         padding: 10px;
         box-sizing: border-box;
     }
-<<<<<<< HEAD
-
-    .rodape {
-=======
     .rodape{
->>>>>>> parent of 26f816f (Página de registro)
         grid-template-areas: "1 2";
         width: 100%;
         row-gap: 30px;
@@ -1951,7 +1838,6 @@ h3 {
         margin: 5px;
         column-gap: 5px;
     }
-<<<<<<< HEAD
 
 }
 
@@ -2156,9 +2042,3 @@ button {
     display: flex;
     justify-content: space-between;
 }
-=======
-    
-  }
-  
-  
->>>>>>> parent of 26f816f (Página de registro)
