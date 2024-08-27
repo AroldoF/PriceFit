@@ -614,7 +614,6 @@ footer {
         } */
 
 /*PÁGINA DE REGISTRO*/
-
 .container-conta {
     display: flex;
     justify-content: center;
@@ -708,7 +707,7 @@ footer {
     margin-left: 5px;
 }
 
-.divisao-conter {
+.divisao-container {
     display: flex;
     align-items: center;
     justify-content: center;
