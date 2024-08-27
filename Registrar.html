@@ -49,7 +49,76 @@
                 </div>
 
                 <div class="input-registro">
+<<<<<<< Updated upstream
                     <input type="radio" name="data" placeholder="Gênero*" required>
+=======
+                    <select id="genero" name="genero" required>
+                    <option value="" disabled selected>Gênero*</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="nao-binario">Não-binário</option>
+                    <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                    </select>
+                </div> 
+
+                <div class="input-registro">
+                    <input type="text" 
+                    id="data-nascimento" 
+                    name="data-nascimento" 
+                    placeholder="Data de nascimento" 
+                    maxlength="10"
+                    required
+                    title="É necessário informar sua data de nascimento completa no formato DD/MM/AAAA."
+                    oninput="formatDate(this)"> 
+                </div>
+                
+                <div class="input-registro">
+                    <input type="tel" name="telefone" placeholder="Telefone celular*" required>
+                </div>
+
+                <div class="input-registro">
+                    <input type="email" name="email" placeholder="E-mail*" required>
+                </div>
+                
+                <div class="input-registro">
+                    <input type="password" name="senha" placeholder="Crie sua senha*" required>
+                </div>
+                
+                <div class="input-registro">
+                    <input type="password" name="confirmesenha" placeholder="Confirme sua senha*">
+                </div>
+
+                <div class="input-redirecionamento">
+                    <select id="pesquisa" name="pesquisa" required>
+                    <option value="" disabled selected>Onde você conheceu a Price Fit?*</option>
+                    <option value="google">Google</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="indicacao">Indicação de Amigo</option>
+                    </select>
+                </div>
+                
+                <p>(*)Campos Obrigatórios</p>
+                
+
+                <div class="input-checkbox">
+                    <input type="checkbox" name="check1">
+                    Quero receber ofertas e novidades por e-mail, SMS, WhatsApp ou mensagens nos App's Price Fit!
+
+                    <input type="checkbox" name="check2" required>
+                    Li e estou de acordo com as políticas da empresa e políticas de privacidade.*
+                </div>
+
+                <div class="button-continuar">
+                    <button type="submit">
+                        CONTINUAR
+                    </button>
+                </div>
+
+                <div class="redirecionamento-login">
+                    <p>Já possui cadastro? <a href="Login.html">ENTRAR</a></p>
+>>>>>>> Stashed changes
                 </div>
             </form>
         </div>

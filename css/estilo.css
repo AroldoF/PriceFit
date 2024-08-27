@@ -477,8 +477,11 @@ footer {
     height: auto;
     box-sizing: border-box;
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
+=======
+>>>>>>> Stashed changes
 .mobile-menu-icon {
     display: none;
 }
@@ -730,12 +733,88 @@ footer {
 
 .divisao-conter {
     display: flex;
+<<<<<<< Updated upstream
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 =======
 >>>>>>> parent of 26f816f (Página de registro)
+=======
+    align-items: center;
+    justify-content: center;
+    width: 772px;
+    margin: 20px 0 10px 0;
+}
+
+.divisao-container hr {
+    flex-grow: 1; 
+    border: 0; 
+    height: 1px;
+    background-color: #B6BBC2;
+    margin: 0 2px;
+}
+
+.divisao-container span {
+    white-space: nowrap;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #B6BBC2;
+}
+
+.input-registro {
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite quebrar a linha */
+    gap: 20px; /* Espaçamento entre os elementos */
+    justify-content: space-between; /* Espaço entre os elementos */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+.input-registro input {
+    padding-left: 40px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.registrar-container input[type="text"],
+.registrar-container input[type="password"],
+.registrar-container input[type="number"],
+.registrar-container input[type="tel"],
+.registrar-container input[type="email"]
+{
+    width: 350px;
+    height: 48px;
+    font-size: 15px;
+    margin: 0;
+    border: 1px solid #7F858D;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.registrar-container .input-registro select{
+    width: 350px;
+    height: 48px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    border: 1px solid #7F858D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#7F858D ;
+}
+
+.registrar-container .input-redirecionamento select{
+    width: 770px;
+    height: 48px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    border: 1px solid #7F858D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#7F858D ;
+}
+
+>>>>>>> Stashed changes
 .produtos_section {
     display: grid;
     grid-template-areas: "1 2";
