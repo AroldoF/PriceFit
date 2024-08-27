@@ -947,7 +947,7 @@ h3 {
         width: 200px;
     }
     .todos_produtos{
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     .produtos_articles_nomes{
@@ -1152,9 +1152,15 @@ h3 {
         margin: 20px auto;
 
     }
+    
 }
 @media (max-width: 880px)
 {
+    .produtos_articles_nomes{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .produtos_articles{
         width: 600px;
     }
@@ -1170,12 +1176,15 @@ h3 {
     .texto_de_busca_consulta{
         display: block;
         height: 30px;
-        width: 340px;
+
     }
     .categorias_home{
         gap: 0;
         width: 100%;
 
+    }
+    .todos_produtos{
+        grid-template-areas: "1 2 3";
     }
     .produtos_section{
         grid-template-areas: "1";
@@ -1242,13 +1251,8 @@ h3 {
         border-radius: 5px;
         width: 300px;
     }
-    .todos_produtos{
-        grid-template-areas: "1 2 3";
-        width: 700px;
-    }
-    .quarto_produto{
-        display: none;
-    }
+    
+    
     .preço_antigo{
         font-size: 12px;
     }
@@ -1257,7 +1261,7 @@ h3 {
         gap: 3px;
     }
     .imagem_titulo{
-        width: 450px;
+        width: 400px;
         margin: auto;
     }
     .imagem_titulo_div{
@@ -1290,15 +1294,20 @@ h3 {
     .botao_comprar{
         width: 255px;
     }
+    
 }
 @media (max-width: 767px) 
 {
     .produtos_articles{
-        width: 100%;
+        width: 90%;
+        margin: auto;
+
     }
-    .imagem_titulo{
+    .produtos_articles_nomes_h3{
         width: 100%;
-    }  
+        gap: 200px;
+    }
+    
     .lojas_produtos_imgs{
         display: block;
     }
@@ -1402,11 +1411,18 @@ h3 {
         gap: 10px;
     }
     .link_lojas{
-        width: 450px;
+        width: 440px;
+    }
+    .butao_outralojas{
+        width: 440px;
     }
   }
 @media (max-width: 480px) 
 {
+    .produtos_articles_nomes_h3{
+        gap: 0;
+        justify-content: space-between;
+    }
     .produtos_articles_nomes_icones{
         width: 340px;
     }
@@ -1436,7 +1452,13 @@ h3 {
         display: none;
     }
     .link_lojas{
-        width: 340px;
+        width: 100%;
+    }
+    .lojas_produtos{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 10px auto;
     }
     .produtos_articles_divs{
         width: 90%;
@@ -1487,8 +1509,9 @@ h3 {
         border-radius: 10px;
     }
     .butao_outralojas{
-        width: 340px;
+        width: 100%;
     }
+    
     .produtos{
         height: 260px;
         width: 150px;
