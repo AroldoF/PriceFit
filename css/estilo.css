@@ -472,11 +472,9 @@ footer {
     height: auto;
     box-sizing: border-box;
 }
-<<<<<<< Updated upstream
 .mobile-menu-icon {
     display: none;
-=======
-
+}
 @media (min-width: 1920px) {
     .container {
         padding: 0 100px;
@@ -488,9 +486,7 @@ footer {
         width: 400px;
         margin-top: -350px;
     }
->>>>>>> Stashed changes
 }
-
 
 .login-container h2 {
     font-size: 25px;
@@ -618,8 +614,7 @@ footer {
     text-decoration: underline;
 }
 
-/*USAR NO GÊNERO*/ 
-
+/*USAR NO GÊNERO*/
 /*select option:first-child {
             color: #666; /* Define uma cor cinza para parecer com um placeholder 
         } */
@@ -655,14 +650,6 @@ footer {
     color: #FF6500;
     width: 100%;
     padding-left: 0;
-}
-
-.input-registro {
-    position: relative;
-    margin-bottom: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .cadastro-redes {
@@ -719,10 +706,51 @@ footer {
     margin-left: 5px;
 }
 
-.divisao-conter {
+.divisao-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    width: 772px;
+    margin: 20px 0 10px 0;
+}
+
+.divisao-container hr {
+    flex-grow: 1; 
+    border: 0; 
+    height: 1px;
+    background-color: #B6BBC2;
+    margin: 0 2px;
+}
+
+.divisao-container span {
+    white-space: nowrap;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #B6BBC2;
+}
+
+.input-registro {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-registro input {
+    padding-left: 40px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 380px;
+    height: 55px;
+    font-size: 15px;
+    padding: 0 16px 0 42px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .produtos_section {
@@ -880,7 +908,6 @@ h3 {
     border-left: 1px solid #FFFFFF;
     padding-left: 20px;
 }
-<<<<<<< Updated upstream
 .cupons_section{
     display: flex;
     gap: 60px;
@@ -969,7 +996,6 @@ h3 {
 .mobile-menu {
     display: none;
 }
-=======
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -1389,7 +1415,6 @@ footer {
     box-sizing: border-box;
 }
 
->>>>>>> Stashed changes
 @media (min-width: 1920px)
  {
     .container {
@@ -1400,7 +1425,6 @@ footer {
     .login-container {
         position: static;
         width: 400px;
-<<<<<<< Updated upstream
         margin-top: -350px; 
     }
 }
@@ -1579,36 +1603,26 @@ footer {
     nav{
         width: 700px;
     }
-=======
-        margin-top: -450px; 
-    }
 }
 
 @media (max-width: 1024px) {
->>>>>>> Stashed changes
     .container {
         padding: 20px;
         justify-content: center;
     }
-<<<<<<< Updated upstream
     .lojas_produtos_imgs{
         display: none;
     }
     .link_lojas{
         width: 350px;
     }
-=======
 
->>>>>>> Stashed changes
     .login-container {
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
-<<<<<<< Updated upstream
         margin-top: -450px;
-=======
         margin-top: -450px; 
->>>>>>> Stashed changes
         padding: 20px;
     }
 
@@ -1630,7 +1644,6 @@ footer {
         max-width: 450px;
         height: 55px;
     }
-<<<<<<< Updated upstream
     .imagem_titulo{
         width: 95%;
         margin: auto;
@@ -1914,21 +1927,16 @@ footer {
         display: block;
     }
     
-=======
 }
 /*FUNCIONOU*/
 
 @media (max-width: 767px) {
->>>>>>> Stashed changes
     .container {
         padding: 0;
         width: 100%;
         overflow-x: hidden;
-<<<<<<< Updated upstream
     }
-=======
-    } 
->>>>>>> Stashed changes
+ 
 
     .login-container {
         width: 100%;
@@ -1938,7 +1946,6 @@ footer {
         padding: 10px;
         box-sizing: border-box;
     }
-<<<<<<< Updated upstream
     .rodape{
         grid-template-areas: "1 2";
         width: 100%;
@@ -2121,10 +2128,6 @@ footer {
     }
     
   }
-  
-  
-=======
-}
 
 .login-container h2 {
     font-size: 25px;
@@ -2327,4 +2330,3 @@ button {
     display: flex;
     justify-content: space-between;
 }
->>>>>>> Stashed changes
