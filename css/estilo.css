@@ -894,6 +894,13 @@ h3 {
 
 @media screen and (max-width: 1300px)
 {
+    .cupons_section{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .cumpons_divs{
+        width: 100%;
+    }
     .cima_header{
         width: 100%;
     }
@@ -958,6 +965,17 @@ h3 {
 }
 @media screen and (max-width: 1150px)
 {
+    .cupons_section{
+        gap: 0;
+        justify-content: space-between;
+    }
+    .cumpons_divs{
+        width: 450px;
+    }
+    h3{
+        text-align: center;
+    }
+    
     .imagem_titulo{
         width: 500px;
         margin: auto;
