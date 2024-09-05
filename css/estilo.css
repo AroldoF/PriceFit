@@ -627,11 +627,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 180px;
     justify-content: center;
     background-color: #fff;
     width: 100%;
-    max-width: 80%;
+    max-width: 737.45px;
     height: auto;
     box-sizing: border-box;
 }
@@ -645,16 +645,9 @@ footer {
     padding-left: 0;
 }
 
-.input-registro {
-    position: relative;
-    margin-bottom: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .cadastro-redes {
     margin-top: 24px;
+    width: 100%;
 }
 
 .cadastro-redes p {
@@ -671,7 +664,7 @@ footer {
 
 .cadastro-redes button {
     font-weight: 100;
-    width: 380px;
+    width: 364px;
     height: 50px;
     padding: 10px;
     border-radius: 5px;
@@ -711,7 +704,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 772px;
+    width: 738px;
     margin: 20px 0 10px 0;
 }
 
@@ -731,56 +724,160 @@ footer {
 }
 
 .input-registro {
-    display: flex; /* Exibe os itens em linha */
-    flex-wrap: wrap; /* Permite quebrar a linha */
-    gap: 20px; /* Espaçamento entre os elementos */
-    justify-content: space-between; /* Espaço entre os elementos */
-    margin-bottom: 15px; /* Espaçamento inferior */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
-.input-registro input {
-    padding-left: 40px;
+.input-registro input,
+.input-registro select {
     width: 100%;
-    padding: 10px;
+    height: 48px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #7F858D;
+    border-radius: 5px;
     box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-registro input:focus,
+.input-registro select:focus {
+    border-color: #FF6500;
+    outline: none;
 }
 
 .registrar-container input[type="text"],
 .registrar-container input[type="password"],
 .registrar-container input[type="number"],
 .registrar-container input[type="tel"],
-.registrar-container input[type="email"]
-{
-    width: 350px;
-    height: 48px;
-    font-size: 15px;
-    margin: 0;
-    border: 1px solid #7F858D;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.registrar-container .input-registro select{
-    width: 350px;
-    height: 48px;
-    font-size: 15px;
-    margin-bottom: 0px;
-    border: 1px solid #7F858D;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color:#7F858D ;
+.registrar-container input[type="email"],
+.registrar-container .input-registro select {
+    width:  100%; 
 }
 
 .registrar-container .input-redirecionamento select{
-    width: 770px;
+    width: 737.45px;
     height: 48px;
     font-size: 15px;
     margin-bottom: 0px;
     border: 1px solid #7F858D;
     border-radius: 5px;
     box-sizing: border-box;
-    color:#7F858D ;
 }
+
+.informar{
+    font-size: 14px;
+    color: #7F858D;
+    font-weight: 100;
+    margin: 5px 0 22px;
+    width: 100%;
+    text-align: left;
+}
+
+.input-checkbox{
+    width: 100%;
+    margin: 8px 0;
+    color:#7F858D;
+    font-size: 15px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.input-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0; 
+    z-index: 1;
+}
+
+.input-checkbox span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 6px;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.input-checkbox input:checked + span::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #FF6500;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.input-checkbox span {
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+.input-checkbox input:checked + span {
+    border-color: #FF6500;
+    background-color: #e6f7ff;
+  }
+
+.input-checkbox a {
+    color: #FF6500;
+    text-decoration: underline;
+}
+
+.button-continuar {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+.button-continuar button{
+    border: none;
+    outline: none;
+    width: 384px;
+    height: 48px;
+    padding: 10px;
+    background-color: #FF6500;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 0.7px;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-continuar button:hover {
+    background-color: #FF8B1F;
+}
+
+.redirecionamento-login p{
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #7F858D;
+    font-weight:600;
+    margin-bottom: 2rem;
+}
+
+.redirecionamento-login a{
+    color: #FF6500;
+}
+
+
 .produtos_section {
     display: grid;
     grid-template-areas: "1 2";
