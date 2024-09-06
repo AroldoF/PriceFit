@@ -744,7 +744,8 @@ footer {
     padding-right: 10px;
     border: 1px solid #7F858D;
     color: rgb(86, 92, 105);
-    font-size: 0.875rem;
+    background-color: #FFFFFF;
+    font-size: 0.975rem;
     border-radius: 5px;
     box-sizing: border-box;
     transition: border-color 0.3s;
@@ -771,7 +772,8 @@ footer {
     font-size: 15px;
     margin-bottom: 0px;
     border: 1px solid #7F858D;
-    color:rgb(86, 92, 105); ;
+    color:rgb(86, 92, 105);
+    background-color: #FFFFFF;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -779,7 +781,7 @@ footer {
 .informar{
     font-size: 14px;
     color: #7F858D;
-    font-weight: 100;
+    font-weight: 400;
     margin: 5px 0 22px;
     width: 100%;
     text-align: left;
@@ -1009,6 +1011,7 @@ footer {
 
     .divisao-container {
         width: 100%;
+        margin-top: 0;
     }
 
     .input-registro {
