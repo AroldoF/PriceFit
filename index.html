@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shorticon" href="">
+    <title>Price Fit</title>
+</head>
+
+<body>
+    <header>
+        <div class="cima_header">
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+            <div>
+            </div>
+
+            <div class="nav_divs">
+                <a class="link_pghome" href="index.html" class="mobile-menu_itens">
+                    <img src="img/Logo-Price-Fit-2.png" alt="" width="150px">
+                </a>
+            </div>
+
+            <div class="barra_de_pesquisa">
+                <input type="text" class="texto_de_busca" placeholder="Buscar produtos...">
+                <div class="busca-botão">
+                    <a href="" id="lupa">
+                        <img src="img/lupa.png" alt="lupa" width="15px">
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav_notificação">
+                <div class="nav_divs_notificacão">
+                    <img src="img/notificacao.png" alt="" width="30px">
+                    <a href="" class="nav_links">Alerta</a>
+                </div>
+                <div class="icones_escondidos">
+                    <a class="icones_escondidos_notificação" href="">
+                        <p class="icones_escondidos_notificação_p">Vazio</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav_divs_login">
+                <a class="nav_divs_login_link" href="Login.html">
+                    <img src="img/do-utilizador.png" alt="" width="30px">
+                    <p class="nav_divs_login_link_paragrafo">Login</p>
+                    <img src="img/sinal-de-seta-para-baixo-para-navegar.png" alt="" width="20px">
+                </a>
+            </div>
+            </ul>
+        </div>
+        <nav>
+            <div>
+                <div class="nav_divs_categorias">
+                    <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                    <a class="nav_links">Categorias</a>
+                </div>
+                <div class="icones_escondidos">
+                    <a class="icones_escondidos_links" href="">Acessorios</a>
+                    <a class="icones_escondidos_links" href="">Bolas</a>
+                    <a class="icones_escondidos_links" href="">Bolsas</a>
+                    <a class="icones_escondidos_links" href="">Camisas</a>
+                    <a class="icones_escondidos_links" href="">Chuteiras</a>
+                    <a class="icones_escondidos_links" href="">Shorts</a>
+                    <a class="icones_escondidos_links" href="">Suplementos</a>
+                </div>
+            </div>
+
+            <div class="nav_divs">
+                <img src="img/promocoes.png" alt="" width="25px">
+                <a href="" class="nav_links">Promoções</a>
+            </div>
+
+            <div class="nav_divs">
+                <img src="img/cupom.png" alt="" width="25px">
+                <a href="cupom.html" class="nav_links">Cupons</a>
+            </div>
+
+            <div class="nav_divs">
+                <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <div class="mobile_barra_de_pesquisa">
+                        <input type="text" class="texto_de_busca" placeholder="Buscar produtos...">
+                        <div class="busca-botão">
+                            <a href="" id="lupa">
+                                <img src="img/lupa.png" alt="lupa" width="15px">
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/notificacao.png" alt="" width="30px">
+                        <a href="" class="nav_links">Alerta</a>
+                    </div>
+                    <div class="icones_escondidos">
+                        <a class="icones_escondidos_notificação" href="">
+                            <p class="icones_escondidos_notificação_p">Vazio</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                        <a class="nav_links">Categorias</a>
+                    </div>
+                    <div class="icones_escondidos" class="mobile-menu_itens">
+                        <a class="icones_escondidos_links" href="">Acessorios</a>
+                        <a class="icones_escondidos_links" href="">Bolas</a>
+                        <a class="icones_escondidos_links" href="">Bolsas</a>
+                        <a class="icones_escondidos_links" href="">Camisas</a>
+                        <a class="icones_escondidos_links" href="">Chuteiras</a>
+                        <a class="icones_escondidos_links" href="">Shorts</a>
+                        <a class="icones_escondidos_links" href="">Suplementos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/promocoes.png" alt="" width="25px">
+                        <a href="" class="nav_links">Promoções</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/cupom.png" alt="" width="25px">
+                        <a href="cupom.html" class="nav_links">Cupons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                        <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script src="js/script.js"></script>
+
+    <main>
+
+        <section>
+
+            <article class="banners">
+                <img class="banners_img" src="img/BANNER 1  pf.jpg" alt="Banner com promoções" width="1200px">
+            </article>
+
+            <article class="categorias_home">
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/CHUTEIRA - CATEGORIA.png"
+                            alt="" width="130px">
+                    </div>
+                    <p class="categorias_home_paragrafo">Chuteiras</p>
+                </a>
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/BOLSA - CATEGORIAS.png" alt=""
+                            width="130px">
+                    </div>
+                    <p class="categorias_home_paragrafo">Bolsas</p>
+                </a>
+                <a href="" class="categorias_home_paragrafo">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/Camisa cat.png" alt=""
+                            width="130px">
+                    </div>
+                    <p class="categorias_home_paragrafo">Camisas</p>
+                </a>
+                <a href="" class="categorias_home_paragrafo categorias_escondidas">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/WHEY - CATEGORIA.png" alt=""
+                            width="130px">
+                    </div>
+                    <p class="categorias_home_paragrafo">Whey</p>
+                </a>
+                <a href="" class="categorias_home_paragrafo categorias_escondidas">
+                    <div class="categorias_home_div"><img class="categorias_img" src="img/RELÓGIO - CATEGORIA.png"
+                            alt="" width="130px">
+                    </div>
+                    <p class="categorias_home_paragrafo">Relógios</p>
+                </a>
+            </article>
+
+            <article class="todos_produtos">
+
+                <div class="produtos">
+                    <a href="Chuteira Campo Adidas Predator 24 Club Unissex - Branco+prata.html">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Chuteira Campo Adidas Predator 24 Club Unissex - Branco+prata.webp" alt=""
+                                width="300px">
+                        </div>
+
+                        <div class="nome_produto_link_div">
+                            <a href="" class="nome_produto_link">Chuteira Campo Adidas Predator 24 Club Unissex -
+                                Branco+prata</a>
+                        </div>
+                        <div class="estrela">
+                            <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                                alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela"
+                                width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                                src="img/estrela (1).png" alt="estrela" width="15px">
+                        </div>
+                        <div class="texto_links">
+                            <a href="" class="frete_gratis">Frete Grátis</a>
+                            <a href="" class="preço_antigo">R$ 379,99 </a>
+                            <a href="" class="preço_novo_icones">R$ 284,00 no pix</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Chuteira Society Mizuno Morelia Classic Unissex - Amarelo+Laranja.webp" alt=""
+                                width="300px">
+                        </div>
+
+                        <div class="nome_produto_link_div">
+                            <a href="" class="nome_produto_link">Chuteira Society Mizuno Morelia Classic Unissex
+                                -Amarelo+Laranja</a>
+                        </div>
+                        <div class="estrela">
+                            <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                                alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela"
+                                width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                                src="img/estrela (1).png" alt="estrela" width="15px">
+                        </div>
+                        <div class="texto_links">
+                            <a href="" class="frete_gratis">Frete Grátis</a>
+                            <a href="" class="preço_antigo">R$ 449,99 </a>
+                            <a href="" class="preço_novo_icones">R$ 332,49 no pix</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Chuteira Campo Adidas Deportivo II - Azul Royal+Preto.webp"
+                                alt="Chuteira Campo Adidas Deportivo II - Azul Royal+Preto" width="300px">
+                        </div>
+
+                        <div class="nome_produto_link_div">
+                            <a href="" class="nome_produto_link">Chuteira Campo Adidas Deportivo II - Azul
+                                Royal+Preto</a>
+                        </div>
+                        <div class="estrela">
+                            <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                                alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela"
+                                width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                                src="img/estrela (1).png" alt="estrela" width="15px">
+                        </div>
+                        <div class="texto_links">
+                            <a href="" class="frete_gratis">Frete Grátis</a>
+                            <a href="" class="preço_antigo">R$ 299,99</a>
+                            <a href="" class="preço_novo_icones">R$ 199,99 no pix</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produtos quarto_produto">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Chuteira Campo Adidas Artilheira V Unissex - Roxo+Branco.webp"
+                                alt="Chuteira Campo Adidas Artilheira V Unissex - Roxo+Branco" width="300px">
+                        </div>
+
+                        <div class="nome_produto_link_div">
+                            <a href="" class="nome_produto_link">Chuteira Campo Adidas Artilheira V Unissex -
+                                Roxo+Branco</a>
+                        </div>
+                        <div class="estrela">
+                            <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                                alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela"
+                                width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                                src="img/estrela (1).png" alt="estrela" width="15px">
+                        </div>
+                        <div class="texto_links">
+                            <a href="" class="frete_gratis">Frete Grátis</a>
+                            <a href="" class="preço_antigo">R$ 379,99 </a>
+                            <a href="" href="" class="preço_novo_icones">R$ 284,00 no pix</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Kit 3 Camiseta Masculina Dry Proteção Solar UV Básica Lisa Treino Academia Camisa Camisetas - Preto+Branco.webp"
+                                alt="" width="300px">
+                        </div>
+                    </a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Kit 3 Camiseta Masculina Dry Proteção Solar UV Básica Lisa
+                            Treino Academia Camisa Camisetas - Preto+Branco</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="preço_antigo">150,00 </a>
+                        <a href="" class="preço_novo_icones">R$ 49,82 no pix ou
+                            2x de R$ 29,14.</a>
+                    </div>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos" src="img/Camisa Puma teamRise Masculina - Amarelo.webp"
+                                alt="Camisa Puma teamRise Masculina - Amarelo" width="300px">
+                        </div>
+                    </a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Camisa Puma teamRise Masculina - Amarelo</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="preço_antigo">R$ 129,99</a>
+                        <a href="" class="preço_novo_icones">R$ 69,99 no pix ou
+                            3x de R$ 23,33</a>
+                    </div>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Kit 3 Camisas Penalty Masculinas X - Branco+Marinho.webp"
+                                alt="Kit 3 Camisas Penalty Masculinas X - Branco+Marinho" width="300px">
+                        </div>
+                    </a>
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Kit 3 Camisas Penalty Masculinas X - Branco+Marinho</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="preço_antigo">R$ 209,90</a>
+                        <a href="" class="preço_novo_icones">R$ 149,88 no pix ou
+                            3x de R$ 49,96</a>
+                    </div>
+                </div>
+
+                <div class="produtos quarto_produto">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Kit 2 Camiseta Masculina Manga Longa Algodão Premium Camisetas - Preto+Grafite.webp"
+                                alt="Kit 2 Camiseta Masculina Manga Longa Algodão Premium Camisetas - Preto+Grafite"
+                                width="300px">
+                        </div>
+
+                        <div class="nome_produto_link_div">
+                            <a href="" class="nome_produto_link">Kit 2 Camiseta Masculina Manga Longa Algodão Premium
+                                Camisetas - Preto+Grafite</a>
+                        </div>
+                        <div class="estrela">
+                            <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                                alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela"
+                                width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                                src="img/estrela (1).png" alt="estrela" width="15px">
+                        </div>
+                        <div class="texto_links sem_frete">
+                            <a href="" class="preço_antigo">R$ 100,00</a>
+                            <a href="" class="preço_novo_icones">R$ 49,90 no pix ou
+                                2x de R$ 24,95</a>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section>
+
+            <article class="banners">
+                <img class="banners_img" src="img/BANNER 2.jpg" alt="Banner com promoções" width="1200px">
+            </article>
+
+            <article class="todos_produtos">
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Bola de Basquete Wilson NBA Player Icon Outdoor Giannis 7 - Verde+Preto.webp"
+                                alt="Bola de Basquete Wilson NBA Player Icon Outdoor Giannis 7 - Verde+Preto"
+                                width="242px">
+                        </div>
+                    
+                    <div class="nome_produto_link_div">
+                        <a href="" class="nome_produto_link">Bola de Basquete Wilson NBA Player Icon Outdoor Giannis 7 -
+                            Verde+Preto</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="frete_gratis">Frete Grátis</a>
+                        <a href="" class="preço_antigo">R$ 219,99</a>
+                        <a href="" class="preço_novo_icones">R$ 199,90 no pix</a>
+                    </div>
+                </a>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Bola de Basquete Wilson NBA DRV Original Oficial Nº 7 - Marrom.webp"
+                                alt="Bola de Basquete Wilson NBA DRV Original Oficial Nº 7 - Marrom" width="300px">
+                        </div>
+                    
+                    <div class="nome_produto_link_div">
+                        <a class="nome_produto_link" href="">Bola de Basquete Wilson NBA DRV Original Oficial Nº 7 -
+                            Marrom</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="frete_gratis">Frete Grátis</a>
+                        <a href="" class="preço_antigo">R$ 142,90</a>
+                        <a href="" class="preço_novo_icones">R$ 122,17 no pix</a>
+                    </div>
+                </a>
+                </div>
+
+                <div class="produtos">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Bola Futebol Adidas Tango Rosário Campo - Branco+Preto.webp"
+                                alt="Bola Futebol Adidas Tango Rosário Campo - Branco+Preto" width="300px">
+                        </div>
+                    
+                    <div class="nome_produto_link_div">
+                        <a class="nome_produto_link" href="">Bola Futebol Adidas Tango Rosário Campo - Branco+Preto</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="frete_gratis">Frete Grátis</a>
+                        <a href="" class="preço_antigo">R$ 149,99 </a>
+                        <a href="" class="preço_novo_icones">R$ 99,99 no pix</a>
+                    </div>
+                </a>
+                </div>
+
+                <div class="produtos quarto_produto">
+                    <a href="">
+                        <div class="imagem_produto_div">
+                            <img class="imagem_produtos"
+                                src="img/Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo.webp"
+                                alt="Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo" width="300px">
+                        </div>
+                    </a>
+                    <div class="nome_produto_link_div">
+                        <a class="nome_produto_link" href="">Bola Vôlei Profissional Ultrasoft Finta 8.0 - Amarelo</a>
+                    </div>
+                    <div class="estrela">
+                        <img src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px"><img src="img/estrela (1).png" alt="estrela" width="15px"><img
+                            src="img/estrela (1).png" alt="estrela" width="15px"><img src="img/estrela (1).png"
+                            alt="estrela" width="15px">
+                    </div>
+                    <div class="texto_links">
+                        <a href="" class="frete_gratis">Frete Grátis</a>
+                        <a href="" class="preço_antigo">R$ 129,90 </a>
+                        <a href="" class="preço_novo_icones">R$ 108,49 no pix</a>
+                    </div>
+                </div>
+                
+            </article>
+
+            <article class="ver_mais">
+                <div class="ver_mais_div">
+                    <a class="botao_ver_mais" href="index.html">
+                        Ver Mais
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <nav class="rodape">
+            <div class="rodape_div">
+                <h2>EMPRESA</h2>
+                <a class="rodape_div_link" href="sobre_nos.html">Sobre a Price Fit</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Trabalhe conosco</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Contate-nos</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Termos e condições</a>
+            </div>
+            <div class="rodape_div">
+                <h2>AJUDA</h2>
+                <a class="rodape_div_link" href="sobre_nos.html">Suporte técnico</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Perguntas frequentes</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Sua privacidade</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Sua conta</a>
+            </div>
+            <div class="rodape_div">
+                <h2>CONTATO</h2>
+                <div class="zap">
+                    <img src="img/whatsapp.png" alt="" width="20px">
+                    <p>(84) 9682-4259</p>
+                </div>
+                <div class="zap">
+                    <img src="img/whatsapp.png" alt="" width="20px">
+                    <p>(84) 9691-6787</p>
+                </div>
+
+            </div>
+            <div class="rodape_div">
+                <h2>MIDIAS SOCIAIS</h2>
+                <div class="rodape_div_ultimo">
+                    <a href=""><img src="img/instagram branco.png" alt="" width="30px"></a>
+                    <a href=""><img src="img/facebook.png" alt="" width="30px"></a>
+                    <a href=""><img src="img/twitter branco.png" alt="" width="30px"></a>
+                </div>
+            </div>
+        </nav>
+        <p id="margin_footer">Copyright © 2024 Price Fit Company S.L. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
