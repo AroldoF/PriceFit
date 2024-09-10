@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Price Fit</title>
+</head>
+<body>
+    <header>
+        <div class="cima_header">
+            <div>
+                <a class="link_pghome" href="index.html">
+                    <img src="img/Logo-Price-Fit-2.png" alt="" width="150px">
+                </a>
+            </div>
+    </header>
+
+    <div class="container-conta"> 
+        <div class="registrar-container">
+
+            <h2>CRIAR CONTA</h2>
+           
+                <div class="cadastro-redes">
+                    <p>Cadastre-se com suas Redes Sociais</p>
+
+                    <button type="submit" class="button-registro-google">
+                        <img src="img/google vermelho.png" alt="icone google" width="23px">
+                        Cadastrar com o <span class="bold-word">Google</span>
+                    </button>
+                    
+                    <button type="submit" class="button-registro-apple">
+                        <img src="img/apple-registro.png" alt="icone facebook" width="23apx">
+                        Cadastrar com a <span class="bold-word">Apple</span>
+                    </button> 
+                </div>
+
+                <div class="divisao-container">
+                    <hr>
+                    <span>OU</span>
+                    <hr>
+                </div>
+            <form class="formulario-registro" action="#" method="post">
+                <div class="input-registro">
+                    <input type="text" name="Nome Completo" placeholder="Nome completo*" required>
+
+                    <input type="text"
+                    name="cpf"
+                    placeholder="CPF*"
+                    maxlength="14" 
+                    required 
+                    oninput="formatCPF(this)">
+
+                    <select id="genero" name="genero" required>
+                    <option class="option" disabled selected>Gênero*</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="nao-binario">Não-binário</option>
+                    <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                    </select>
+
+                    <input type="text"
+                    id="data-nascimento" 
+                    name="data-nascimento" 
+                    placeholder="Data de nascimento" 
+                    maxlength="10"
+                    required
+                    title="É necessário informar sua data de nascimento completa no formato DD/MM/AAAA."
+                    oninput="formatDate(this)">
+                
+                    <input type="tel"
+                    name="telefone"
+                    placeholder="Telefone celular*"
+                    maxlength="16"
+                    required
+                    oninput="formatPhone(this)">
+
+                    <input type="email" name="email" placeholder="E-mail*" required>
+                
+                    <input type="password" name="senha" placeholder="Crie sua senha*" required>
+
+                    <input type="password" name="confirmesenha" placeholder="Confirme sua senha*">
+                </div>
+
+                <div class="input-redirecionamento">
+                    <select id="pesquisa" name="pesquisa" required>
+                    <option class="option" disabled selected>Onde você conheceu a Price Fit?*</option>
+                    <option value="google">Google</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="indicacao">Indicação de Amigo</option>
+                    </select>
+                </div>
+
+                <p class="informar">(*) Campos obrigatórios</p>
+                
+                <div class="input-checkbox">
+                    <input type="checkbox">
+                    <span></span>
+                    Quero receber ofertas e novidades por e-mail, SMS, WhatsApp ou mensagens nos App's Price Fit!
+                </div>
+
+                <div class="input-checkbox">
+                    <input type="checkbox" required>
+                    <span></span>
+                    Li e estou de acordo com as <a href="#">políticas da empresa e políticas de privacidade*.</a>
+                </div>
+
+                <div class="button-continuar">
+                    <button type="submit">
+                        CONTINUAR
+                    </button>
+                </div>
+            </form>
+
+                <div class="redirecionamento-login">
+                    <p>Já possui cadastro? <a href="Login.html">ENTRAR</a></p>
+                </div>
+        </div>
+    </div>
+    
+    <script>
+        function formatDate(input) {
+
+            let value = input.value.replace(/\D/g, '');
+        
+            
+            if (value.length > 2 && value.length <= 4) {
+                value = value.replace(/(\d{2})(\d{1,2})/, '$1/$2');
+            } else if (value.length > 4) {
+                value = value.replace(/(\d{2})(\d{2})(\d{1,4})/, '$1/$2/$3');
+            }
+    
+            input.value = value;
+    }
+    </script>
+
+        <script>
+            function formatCPF(input) {
+
+            let value = input.value.replace(/\D/g, '');
+        
+
+            if (value.length > 3 && value.length <= 6) {
+                value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            } else if (value.length > 6 && value.length <= 9) {
+                value = value.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+            } else if (value.length > 9) {
+                value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+            }
+
+            input.value = value;
+    }
+    </script>
+
+    <script>
+        function formatPhone(input) {
+   
+        let value = input.value.replace(/\D/g, '');
+    
+
+        if (value.length > 2 && value.length <= 7) {
+            value = value.replace(/(\d{2})(\d{1,5})/, '($1) $2');
+        } else if (value.length > 7) {
+            value = value.replace(/(\d{2})(\d{1})(\d{4})(\d{0,4})/, '($1) $2 $3-$4');
+        }
+    
+        input.value = value;
+    }
+    </script>
+
+</body>
+</html>
