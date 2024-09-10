@@ -11,8 +11,14 @@
 <body>
     <header>
         <div class="cima_header">
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
             <div>
-                <a class="link_pghome" href="index.html">
+            </div>
+
+            <div class="nav_divs">
+                <a class="link_pghome" href="index.html" class="mobile-menu_itens">
                     <img src="img/Logo-Price-Fit-2.png" alt="" width="150px">
                 </a>
             </div>
@@ -32,7 +38,9 @@
                     <a href="" class="nav_links">Alerta</a>
                 </div>
                 <div class="icones_escondidos">
-                    <a class="icones_escondidos_notificação" href="">Vazio</a>
+                    <a class="icones_escondidos_notificação" href="">
+                        <p class="icones_escondidos_notificação_p">Vazio</p>
+                    </a>
                 </div>
             </div>
 
@@ -43,6 +51,7 @@
                     <img src="img/sinal-de-seta-para-baixo-para-navegar.png" alt="" width="20px">
                 </a>
             </div>
+            </ul>
         </div>
         <nav>
             <div>
@@ -68,7 +77,7 @@
 
             <div class="nav_divs">
                 <img src="img/cupom.png" alt="" width="25px">
-                <a href="" class="nav_links">Cupons</a>
+                <a href="cupom.html" class="nav_links">Cupons</a>
             </div>
 
             <div class="nav_divs">
@@ -76,12 +85,80 @@
                 <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <div class="mobile_barra_de_pesquisa">
+                        <input type="text" class="texto_de_busca" placeholder="Buscar produtos...">
+                        <div class="busca-botão">
+                            <a href="" id="lupa">
+                                <img src="img/lupa.png" alt="lupa" width="15px">
+                            </a>
+                        </div>
+                    </div>
 
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/notificacao.png" alt="" width="30px">
+                        <a href="" class="nav_links">Alerta</a>
+                    </div>
+                    <div class="icones_escondidos">
+                        <a class="icones_escondidos_notificação" href="">
+                            <p class="icones_escondidos_notificação_p">Vazio</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                        <a class="nav_links">Categorias</a>
+                    </div>
+                    <div class="icones_escondidos" class="mobile-menu_itens">
+                        <a class="icones_escondidos_links" href="">Acessorios</a>
+                        <a class="icones_escondidos_links" href="">Bolas</a>
+                        <a class="icones_escondidos_links" href="">Bolsas</a>
+                        <a class="icones_escondidos_links" href="">Camisas</a>
+                        <a class="icones_escondidos_links" href="">Chuteiras</a>
+                        <a class="icones_escondidos_links" href="">Shorts</a>
+                        <a class="icones_escondidos_links" href="">Suplementos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/promocoes.png" alt="" width="25px">
+                        <a href="" class="nav_links">Promoções</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/cupom.png" alt="" width="25px">
+                        <a href="cupom.html" class="nav_links">Cupons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                        <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <script src="js/script.js"></script>
+
 
     <main>
         <h2 class="detalhes_tecnicos_titulo">Melhores Cupons</h2>
+            <div class="mobile-menu-cumpons">
+                <button onclick="filtroShow()"><img class="icon_cupom" src="img/filtro.png" alt="" width="35px"></button>
+            </div>
         <section class="cupons_section">
+            
             <article class="cumpons_divs_lojas">
                 <h3 class="titulo_loja_cupom">Lojas:</h3>
                 <div class="cupons_lojas_templete">
@@ -110,10 +187,38 @@
                 </div>
                 <button class="botao_cupons">Mais lojas</button>
             </article>
-            <article>
+            <article class="cumpons_divs_lojas_escondido">
+                <h3 class="titulo_loja_cupom">Lojas:</h3>
+                <div class="cupons_lojas_templete">
+                    <p class="cupons_lojas">Amazon</p>
+                    <p class="cupons_lojas">Netshoes</p>
+                </div>
+                <div class="cupons_lojas_templete">
+                    <p class="cupons_lojas">Magaluzine Luiza</p>
+                    <p class="cupons_lojas">Americanas</p>
+
+                </div>
+                <div class="cupons_lojas_templete">
+                    <p class="cupons_lojas">Mercado Livre</p>
+                    <p class="cupons_lojas">KaBum</p>
+
+                </div>
+                <div class="cupons_lojas_templete">
+                    <p class="cupons_lojas">Casas Bahia</p>
+                    <p class="cupons_lojas">Renner</p>
+
+                </div>
+                <div class="cupons_lojas_templete">
+                    <p class="cupons_lojas">Shopee</p>
+                    <p class="cupons_lojas">Aliexpress</p>
+
+                </div>
+                <button class="botao_cupons">Mais lojas</button>
+            </article>
+            <article class="cumpons_articles">
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/netshoes_icone-removebg-preview.png" alt="" width="100px">
+                        <img class="cupom_img" src="img/netshoes_icone-removebg-preview.png" alt="" width="100px">
                         <h3 class="nome_cupom">Netshoes</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -123,7 +228,7 @@
 
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/magaz-luiza.png" alt="" width="100px">
+                        <img class="cupom_img" src="img/magaz-luiza.png" alt="" width="100px">
                         <h3 class="nome_cupom">Cupons Magazine Luiza</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -133,7 +238,7 @@
 
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/Amazon_icon.png" alt="" width="100px">
+                        <img class="cupom_img" src="img/Amazon_icon.png" alt="" width="100px">
                         <h3 class="nome_cupom">Cupons Amazon</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -143,7 +248,7 @@
 
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/renner-1.svg" alt="" height="100px">
+                        <img class="cupom_img" src="img/renner-1.svg" alt="" height="100px">
                         <h3 class="nome_cupom">Cupons Renner</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -153,7 +258,7 @@
 
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/mercadolivreicone" alt="" height="100px">
+                        <img class="cupom_img" src="img/mercadolivreicone" alt="" height="100px">
                         <h3 class="nome_cupom"> Cupons Mercado Livre</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -163,7 +268,7 @@
 
                 <div class="cumpons_divs">
                     <div class="cumpons_divs_templetes">
-                        <img src="img/shopeeicone.png" alt="" height="100px">
+                        <img class="cupom_img" src="img/shopeeicone.png" alt="" height="100px">
                         <h3 class="nome_cupom">Cupons Shopee</h3>
                         <button class="botao_ver_cupom">Ver cupom</button>
                     </div>
@@ -174,6 +279,8 @@
             </article>
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 
     <footer>
         <nav id="rodape">
