@@ -671,6 +671,12 @@ footer {
     }
 }
 
+@media (max-height: 640px){
+    .login-container{
+        margin-top: -20px;
+    }
+}
+
 /*PÁGINA DE REGISTRO*/
 .container-conta {
     margin: 0 auto;
@@ -1594,32 +1600,7 @@ h3 {
     .link_lojas{
         width: 350px;
     }
-    .login-container {
-        width: 100%;
-        max-width: 450px;
-        margin: 0 auto;
-        margin-top: -450px;
-        padding: 20px;
-    }
 
-    .login-container h2 {
-        font-size: 22px;
-        text-align: center;
-        margin: 0 0 20px;
-    }
-
-    .input-container input {
-        padding-left: 40px;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .button-entrar button {
-        width: 100%;
-        max-width: 450px;
-        height: 55px;
-    }
     .imagem_titulo{
         width: 95%;
         margin: auto;
@@ -1940,14 +1921,6 @@ h3 {
         overflow-x: hidden;
     }
 
-    .login-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: -280px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
     .rodape{
         grid-template-areas: "1 2";
         width: 100%;
