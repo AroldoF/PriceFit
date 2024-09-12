@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Fit - Sobre Nós</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Price Fit - Sobre</title>
+    <link rel="shorticon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="cima_header">
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
             <div>
-                <a class="link_pghome" href="index.html">
+            </div>
+
+            <div class="nav_divs">
+                <a class="link_pghome" href="index.html" class="mobile-menu_itens">
                     <img src="img/Logo-Price-Fit-2.png" alt="" width="150px">
                 </a>
             </div>
@@ -23,43 +33,217 @@
                     </a>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <a href="" class="nav_links">alerta</a>
+
+            <div class="nav_notificação">
+                <div class="nav_divs_notificacão">
+                    <img src="img/notificacao.png" alt="" width="30px">
+                    <a href="" class="nav_links">Alerta</a>
+                </div>
+                <div class="icones_escondidos">
+                    <a class="icones_escondidos_notificação" href="">
+                        <p class="icones_escondidos_notificação_p">Vazio</p>
+                    </a>
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <a href="" class="nav_links">login</a>
+            <div class="nav_divs_login">
+                <a class="nav_divs_login_link" href="Login.html">
+                    <img src="img/do-utilizador.png" alt="" width="30px">
+                    <p class="nav_divs_login_link_paragrafo">Login</p>
+                    <img src="img/sinal-de-seta-para-baixo-para-navegar.png" alt="" width="20px">
+                </a>
             </div>
+            </ul>
         </div>
         <nav>
             <div>
-                <img src="" alt="">
-                <a href="" class="nav_links">Categorias</a>
+                <div class="nav_divs_categorias">
+                    <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                    <a class="nav_links">Categorias</a>
+                </div>
+                <div class="icones_escondidos">
+                    <a class="icones_escondidos_links" href="">Acessorios</a>
+                    <a class="icones_escondidos_links" href="">Bolas</a>
+                    <a class="icones_escondidos_links" href="">Bolsas</a>
+                    <a class="icones_escondidos_links" href="">Camisas</a>
+                    <a class="icones_escondidos_links" href="">Chuteiras</a>
+                    <a class="icones_escondidos_links" href="">Shorts</a>
+                    <a class="icones_escondidos_links" href="">Suplementos</a>
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="nav_divs">
+                <img src="img/promocoes.png" alt="" width="25px">
                 <a href="" class="nav_links">Promoções</a>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <a href="" class="nav_links">Cupons</a>
+            <div class="nav_divs">
+                <img src="img/cupom.png" alt="" width="25px">
+                <a href="cupom.html" class="nav_links">Cupons</a>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <a href="" class="nav_links">Lista de desejos</a>
+            <div class="nav_divs">
+                <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <div class="mobile_barra_de_pesquisa">
+                        <input type="text" class="texto_de_busca" placeholder="Buscar produtos...">
+                        <div class="busca-botão">
+                            <a href="" id="lupa">
+                                <img src="img/lupa.png" alt="lupa" width="15px">
+                            </a>
+                        </div>
+                    </div>
 
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/notificacao.png" alt="" width="30px">
+                        <a href="" class="nav_links">Alerta</a>
+                    </div>
+                    <div class="icones_escondidos">
+                        <a class="icones_escondidos_notificação" href="">
+                            <p class="icones_escondidos_notificação_p">Vazio</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/lista-de-reproducao.png" alt="" width="25px">
+                        <a class="nav_links">Categorias</a>
+                    </div>
+                    <div class="icones_escondidos" class="mobile-menu_itens">
+                        <a class="icones_escondidos_links" href="">Acessorios</a>
+                        <a class="icones_escondidos_links" href="">Bolas</a>
+                        <a class="icones_escondidos_links" href="">Bolsas</a>
+                        <a class="icones_escondidos_links" href="">Camisas</a>
+                        <a class="icones_escondidos_links" href="">Chuteiras</a>
+                        <a class="icones_escondidos_links" href="">Shorts</a>
+                        <a class="icones_escondidos_links" href="">Suplementos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/promocoes.png" alt="" width="25px">
+                        <a href="" class="nav_links">Promoções</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/cupom.png" alt="" width="25px">
+                        <a href="cupom.html" class="nav_links">Cupons</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="nav-item-divs">
+                        <img src="img/silhueta-de-formato-simples-de-coracao.png" alt="" width="25px">
+                        <a href="lista_de_desejos.html" class="nav_links">Lista de desejos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <h1>Sobre Nós</h1>
+    <div class="container-sobrenos">
+        <h2>Sobre a Price Fit!</h2>
+        <div class="texto-sobre">
+            <p> Em um pequeno polo acadêmico no coração do Rio Grande do Norte, dois alunos do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte, localizado em Pau dos Ferros, tiveram uma ideia brilhante.
 
-    </main>
+            Arôldo e Ayrton, estudantes de design web, estavam sempre à procura de maneiras de facilitar a vida dos consumidores locais. Cada vez que precisavam comprar algo, se viam perdidos em meio a uma variedade de opções de lojas e preços, sem saber onde encontrar o melhor negócio. Então, decidiram fazer algo a respeito. <br><br>
+            
+            Com sua paixão pela tecnologia e determinação em resolver problemas, os dois começaram a desenvolver um projeto que mais tarde se tornaria a Price Fit. Inspirados pela ideia de simplificar as compras e economizar tempo e dinheiro para as pessoas, eles fundaram uma empresa dedicada à comparação de preços e promoções. <br><br>
+            
+            O conceito era simples, mas inovador: criar uma plataforma online onde os consumidores pudessem facilmente comparar preços de produtos em diferentes lojas e encontrar as melhores promoções. Com suas habilidades em design e programação, Arôldo e Ayrton construíram um site intuitivo e fácil de usar, com uma vasta gama de produtos e lojas para os clientes explorarem.<br><br>
+            
+            À medida que a Price Fit ganhava popularidade entre os moradores de Pau dos Ferros e região, Carlos e Maria viram a oportunidade de expandir seus serviços para além das fronteiras locais. Com determinação e trabalho árduo, eles conseguiram atrair investidores e expandir a empresa para outras cidades e estados.<br><br>
+            
+            Hoje, a Price Fit é uma das principais plataformas de comparação de preços e promoções do Brasil, ajudando milhões de pessoas a economizar dinheiro em suas compras diárias. Arôldo e Ayrton continuam liderando a empresa com a mesma paixão e dedicação que os levaram a iniciar esse projeto inovador durante seus dias de faculdade.</p>
+        </div>
+
+        <h3>Nossas Métricas em 2024:</h3>
+        
+        <div class="icones-sobre">
+
+            <div class="icones-aling">
+            <img src="img/icone-colaboradores.png" alt="">
+            <p><span>+ 100<br></span>Colaboradores</p>
+            </div>
+
+            <div class="icones-aling">
+            <img src="img/icone-cidades.png" alt="">
+            <p><span>+ 800<br></span>Cidades Atendidas</p>
+            </div>
+
+            <div class="icones-aling">
+            <img src="img/icone-clientes.png" alt="">
+            <p><span>+ 5.000 <br></span>de Clientes</p>
+            </div>
+
+            <div class="icones-aling">
+            <img src="img/icone-pedidos.png" alt="">
+            <p><span>+ 60.000<br></span>de Pedidos</p>
+            </div>
+        </div>
+
+        <h4>O Nosso Campus:</h4>
+        <div class="texto-sobre">
+            <p>O IFRN Campus Pau dos Ferros, inaugurado em 2009, oferece educação de qualidade no Alto Oeste potiguar. Com cursos técnicos, superiores e de pós-graduação, o campus se destaca pela excelência acadêmica e inovação. <br> Além disso, possui uma infraestrutura moderna e um corpo docente qualificado, contribuindo para o desenvolvimento educacional da região.</p>
+        </div>
+        <div class="img-elementos">
+            <img src="img/Ifrn-logo.png" alt="Sobre nós" width="400px">
+
+            <img src="img/Campus pau dos ferros.jpg" alt="Campus IFRN" width="400px">
+
+            <img src="img/IFRN_Pau_dos_Ferros.jpg" alt="" width="814px">
+        </div>
+                                                             
+    </div>
+
+    <footer>
+        <nav class="rodape">
+            <div class="rodape_div">
+                <h2>EMPRESA</h2>
+                <a class="rodape_div_link" href="sobre_nos.html">Sobre a Price Fit</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Trabalhe conosco</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Contate-nos</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Termos e condições</a>
+            </div>
+            <div class="rodape_div">
+                <h2>AJUDA</h2>
+                <a class="rodape_div_link" href="sobre_nos.html">Suporte técnico</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Perguntas frequentes</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Sua privacidade</a>
+                <a class="rodape_div_link" href="sobre_nos.html">Sua conta</a>
+            </div>
+            <div class="rodape_div">
+                <h2>CONTATO</h2>
+                <div class="zap">
+                    <img src="img/whatsapp.png" alt="" width="20px">
+                    <p>(84) 9682-4259</p>
+                </div>
+                <div class="zap">
+                    <img src="img/whatsapp.png" alt="" width="20px">
+                    <p>(84) 9691-6787</p>
+                </div>
+
+            </div>
+            <div class="rodape_div">
+                <h2>MIDIAS SOCIAIS</h2>
+                <div class="rodape_div_ultimo">
+                    <a href=""><img src="img/instagram branco.png" alt="" width="30px"></a>
+                    <a href=""><img src="img/facebook.png" alt="" width="30px"></a>
+                    <a href=""><img src="img/twitter branco.png" alt="" width="30px"></a>
+                </div>
+            </div>
+        </nav>
+        <p id="margin_footer">Copyright © 2024 Price Fit Company S.L. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
