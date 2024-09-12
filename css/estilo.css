@@ -241,6 +241,7 @@ select:focus {
 
 .categorias_home_paragrafo {
     margin: 0;
+    font-weight: 500;
     text-align: center;
     color: black;
     text-decoration: none;
@@ -665,13 +666,13 @@ footer {
     }
 }
 
-@media (max-height: 765px){
+@media (max-height: 770px){
     .login-container{
         margin-top: -180px;
     }
 }
 
-@media (max-height: 640px){
+@media (max-height: 660px){
     .login-container{
         margin-top: -20px;
     }
@@ -1132,6 +1133,69 @@ footer {
     .registrar-container {
         margin-top: 400px;
     }
+}
+
+/* Página Sobre Nós*/
+.container-sobrenos{
+    display: flex;
+    width: 65%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container-sobrenos h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #FF6500;
+}
+
+.texto-sobre{
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.container-sobrenos h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.icones-sobre{
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.icones-aling{
+    text-align: center;
+    font-size: 16px;
+}
+
+.icones-aling span{
+    font-weight: 700;
+}
+
+.img-elementos{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-sobrenos h4{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    color: #FF6500;
+}
+
+.img-elementos img{
+   margin: 6px;
+   border-radius: 10px;
 }
 
 
