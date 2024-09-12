@@ -1208,7 +1208,111 @@ footer {
    border-radius: 10px;
 }
 
+/* Responsividade Sobre Nós */
+/* Estilos para telas médias (largura máxima de 1200px) */
+@media (max-width: 1200px) {
+    .container-sobrenos {
+      width: 75%;
+    }
+    .texto-sobre {
+      font-size: 12px;
+    }
+    .icones-sobre {
+      padding: 0 10px;
+    }
+    .img-elementos {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Estilos para telas pequenas (largura máxima de 768px) */
+  @media (max-width: 768px) {
+    /* Centralizar todos os elementos e adicionar margem nas laterais */
+    .container-sobrenos {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .texto-sobre {
+      font-size: 10px;
+      text-align: center;
+    }
+    .icones-sobre {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .img-elementos {
+      flex-direction: column;
+      padding: 0 20px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
 
+    
+  }
+  
+  /* Estilos para telas muito pequenas (largura máxima de 480px) */
+  @media (max-width: 480px) {
+    .container-sobrenos {
+      width: 85%;
+      padding: 0 15px;
+    }
+
+    .container-sobrenos h2{
+        font-size: 30px;
+    }
+
+    .container-sobrenos h3{
+        font-size: 30px;
+    }
+
+    .container-sobrenos h4{
+        font-size: 30px;
+    }
+    .texto-sobre {
+      font-size: 14px;
+    }
+    .icones-sobre {
+      padding: 0 10px;
+    }
+    .img-elementos {
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      justify-content:flex-start;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+
+    .img-elementos img {
+        max-width: 100%;
+        height: auto; /* Mantém a proporção */
+  }
+}
+  
+  /* Estilos para telas muito muito pequenas (largura máxima de 320px) */
+  @media (max-width: 320px) {
+    .container-sobrenos {
+      width: 100%;
+      padding: 0 10px;
+    }
+    .texto-sobre {
+      font-size: 6px;
+    }
+    .icones-sobre {
+      padding: 0 5px;
+    }
+    .img-elementos {
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      padding: 0 5px;
+      margin: 0 auto;
+    }
+  }
 
 
 .produtos_section {
