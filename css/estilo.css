@@ -264,7 +264,7 @@ select:focus {
     border-radius: 10px;
     margin: 10px 0 20px 0;
     padding: 10px;
-    height: 345px;
+    height: 350px;
     width: 234px;
     background-color: rgba(217, 217, 217, 1);
     overflow-x: hidden;
@@ -325,10 +325,10 @@ select:focus {
 
 .texto_links {
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 2px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1px;
     text-align: center;
     flex-wrap: nowrap;
 }
@@ -1448,7 +1448,10 @@ h3 {
         width: 100%;
     }
     
-    
+    .texto_links{
+        margin-top: 8px;
+        gap: 8px;
+    }
 
 }
 
@@ -1793,9 +1796,15 @@ h3 {
         display: block;
     }
     .mobile-menu-cumpons{
-        display: block;
-        width: 220px;
-        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        max-width: 100px;
+        margin-left: 20px;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        padding: 10px;
     }
     .mobile-menu-icon button {
         background-color: transparent;
