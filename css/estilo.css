@@ -1255,7 +1255,6 @@ footer {
     
   }
   
-  /* Estilos para telas muito pequenas (largura máxima de 480px) */
   @media (max-width: 480px) {
     .container-sobrenos {
       width: 85%;
@@ -1301,7 +1300,7 @@ footer {
       padding: 0 10px;
     }
     .texto-sobre {
-      font-size: 6px;
+      font-size: 12px;
     }
     .icones-sobre {
       padding: 0 5px;
