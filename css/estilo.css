@@ -1687,6 +1687,9 @@ h3 {
         color: #FFFFFF;
         text-transform: uppercase;
    }
+   .texto_cupom{
+        margin: 3px 0;
+    }
 }
 @media (max-width: 1024px) 
 {
@@ -2117,6 +2120,9 @@ h3 {
     }
     .texto_cupom{
         margin: 3px 0;
+    }
+    .cumpons_divs{
+        padding-bottom: 40px;
     }
 }
 @media (max-width: 480px) 
