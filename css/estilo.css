@@ -710,7 +710,6 @@ footer {
     box-sizing: border-box;
 }
 
-
 .registrar-container {
     display: flex;
     flex-direction: column;
@@ -723,8 +722,6 @@ footer {
     height: auto;
     box-sizing: border-box;
 }
-
-
 
 .registrar-container h2 {
     font-size: 25px;
@@ -1253,8 +1250,7 @@ footer {
       padding: 0 20px;
     }
     .img-elementos {
-      flex-direction: column;
-      padding: 0 20px;
+      justify-content: center;
       max-width: 100%;
       width: auto;
       height: auto;
@@ -1288,11 +1284,8 @@ footer {
       padding: 0 10px;
     }
     .img-elementos {
-      flex-direction: column;
       width: auto;
       height: auto;
-      justify-content:flex-start;
-      padding: 0 10px;
       margin: 0 auto;
     }
 
@@ -1301,27 +1294,6 @@ footer {
         height: auto;
   }
 }
-
-  @media (max-width: 320px) {
-    .container-sobrenos {
-      width: 100%;
-      padding: 0 10px;
-    }
-    .texto-sobre {
-      font-size: 12px;
-    }
-    .icones-sobre {
-      padding: 0 5px;
-    }
-    .img-elementos {
-      flex-direction: column;
-      width: auto;
-      height: auto;
-      padding: 0 5px;
-      margin: 0 auto;
-    }
-  }
-
 
 .produtos_section {
     display: grid;
@@ -1533,7 +1505,7 @@ h3 {
 }
 
 .cumpons_divs {
-    padding: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 10px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -1570,7 +1542,7 @@ h3 {
     flex-direction: column;
     gap: 10px;
     width: 400px;
-    height: 450px;
+    height: 480px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
@@ -1585,7 +1557,6 @@ h3 {
 }
 
 .nome_cupom {
-    width: 300px;
     font-weight: 800;
     color: #313131;
     
@@ -1623,7 +1594,7 @@ h3 {
     width: 200px;
     border-radius: 5px;
     border-style: none;
-    height: 100px;
+    height: 40px;
     font-weight: 600;
     background-color: #FF6500;
     color: #FFFFFF;
@@ -1632,7 +1603,7 @@ h3 {
 }
 
 .cupons_section h3{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .texto_cupom {
@@ -2293,8 +2264,10 @@ h3 {
     }
     .botao_ver_cupom_escondido{
         display: block;
+        align-items: center;
         border: none;
         border-radius: 10px;
+        color: #FFFFFF;
         background-color: #2cac32f1;
         width: 100%;
         height: 40px;
@@ -2304,6 +2277,7 @@ h3 {
     }
     .texto_cupom{
         margin: 3px 0;
+        font-size: 12px;
     }
     .cumpons_divs{
         padding-bottom: 40px;
