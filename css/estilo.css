@@ -1199,7 +1199,6 @@ footer {
     width: 100%;
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -1235,7 +1234,7 @@ footer {
   @media (max-width: 768px) {
 
     .container-sobrenos {
-      width: 95%;
+      width: 85%;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -1553,7 +1552,9 @@ h3 {
 .cupons_lojas_templete{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    text-align: center;
+    gap: 10px;
+    margin: 0 10px;
 }
 
 .nome_cupom {
@@ -1567,7 +1568,6 @@ h3 {
     grid-row: auto;
     background-color: #2199fc;
     display: flex;
-    height: 20px;
     width: 150px;
     justify-content: center;
     align-items: center;
@@ -1591,6 +1591,9 @@ h3 {
 }
 
 .botao_cupons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     border-radius: 5px;
     border-style: none;
@@ -2021,13 +2024,20 @@ h3 {
     .mobile-menu-cumpons{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 5px;
         height: 30px;
         max-width: 100px;
         margin-left: 20px;
         background-color: #F2F2F2;
-        border-radius: 30px;
+        border-radius: 10px;
         padding: 10px;
+    }
+
+    .mobile-menu-cumpons p{
+        font-size: 19px;
+        font-weight: 600;
+        color: #313131;
     }
     .mobile-menu-icon button {
         background-color: transparent;
@@ -2280,7 +2290,7 @@ h3 {
         font-size: 12px;
     }
     .cumpons_divs{
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 480px) 
